@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, interactive-widget=resizes-content">
   <title>Le lexique tech — AktibCode</title>
   <meta name="description" content="API, LLM, token, HTTPS, transaction : les mots de la tech définis simplement, avec l’article pour aller plus loin.">
   <meta name="theme-color" content="#f3efe3">
@@ -55,7 +55,7 @@
     </div>
   </header>
 
-  <div class="mobile-menu" id="mobile-menu">
+  <div class="mobile-menu" id="mobile-menu" role="navigation" aria-label="Navigation mobile">
     <a href="articles.html">Articles <span>08</span></a>
     <a href="lexique.html">Lexique <span>20</span></a>
     <a href="a-propos.html">À propos <span>Le projet</span></a>
@@ -76,7 +76,7 @@
         <div class="search-box" style="flex: 1 1 280px; max-width: 420px;">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg>
           <label for="lex-search" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);">Rechercher une notion</label>
-          <input type="search" id="lex-search" placeholder="Rechercher une notion…" autocomplete="off">
+          <input type="search" id="lex-search" placeholder="Rechercher une notion…" autocomplete="off" inputmode="search" enterkeyhint="search" spellcheck="false">
         </div>
         <span id="lex-count" class="eyebrow" aria-live="polite" style="margin:0;">20 notions</span>
       </div>

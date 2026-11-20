@@ -58,7 +58,7 @@ const head = ({ title, description, image = "assets/images/hero.jpg", type = "ar
 <html lang="fr">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, interactive-widget=resizes-content">
   <title>${esc(title)}</title>
   <meta name="description" content="${esc(description)}">
   <meta name="author" content="AktibCode">
@@ -106,7 +106,7 @@ const header = (active) => `<a class="skip-link" href="#contenu">Aller au conten
     </div>
   </header>
 
-  <div class="mobile-menu" id="mobile-menu">
+  <div class="mobile-menu" id="mobile-menu" role="navigation" aria-label="Navigation mobile">
     <a href="articles.html">Articles <span>${String(ARTICLES.length).padStart(2, "0")}</span></a>
     <a href="lexique.html">Lexique <span>${LEXIQUE.length}</span></a>
     <a href="a-propos.html">À propos <span>Le projet</span></a>

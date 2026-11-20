@@ -50,22 +50,34 @@
     const menu = $("#mobile-menu");
     if (!toggle || !menu) return;
 
-    const close = () => {
+    const firstLink = $("a", menu);
+
+    const close = (restoreFocus) => {
+      if (!menu.classList.contains("is-open")) return;
       menu.classList.remove("is-open");
       toggle.setAttribute("aria-expanded", "false");
+      document.body.classList.remove("menu-open");
+      if (restoreFocus) toggle.focus({ preventScroll: true });
     };
 
     toggle.addEventListener("click", () => {
       const open = menu.classList.toggle("is-open");
       toggle.setAttribute("aria-expanded", open ? "true" : "false");
+      document.body.classList.toggle("menu-open", open);
+      if (open && firstLink) firstLink.focus({ preventScroll: true });
     });
 
-    $$("a", menu).forEach((a) => a.addEventListener("click", close));
+    $$("a", menu).forEach((a) => a.addEventListener("click", () => close(false)));
     document.addEventListener("keydown", (e) => {
-      if (e.key === "Escape") close();
+      if (e.key === "Escape") close(true);
+    });
+    document.addEventListener("click", (e) => {
+      if (!menu.classList.contains("is-open")) return;
+      if (menu.contains(e.target) || toggle.contains(e.target)) return;
+      close(false);
     });
     window.addEventListener("resize", () => {
-      if (window.innerWidth > 880) close();
+      if (window.innerWidth > 880) close(false);
     });
   }
 
