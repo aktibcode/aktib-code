@@ -54,14 +54,14 @@ const themeScript = `<script>
     })();
   </script>`;
 
-const head = ({ title, description, image = "assets/images/hero.jpg", type = "article", extra = "" }) => `<!DOCTYPE html>
+const head = ({ title, description, image = "assets/images/hero.jpg", type = "article", author = "AktibCode", extra = "" }) => `<!DOCTYPE html>
 <html lang="fr">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, interactive-widget=resizes-content">
   <title>${esc(title)}</title>
   <meta name="description" content="${esc(description)}">
-  <meta name="author" content="AktibCode">
+  <meta name="author" content="${esc(author)}">
   <meta name="theme-color" content="#f3efe3">
   <meta property="og:title" content="${esc(title)}">
   <meta property="og:description" content="${esc(description)}">
@@ -221,7 +221,7 @@ function buildArticle(a) {
     dateModified: a.date,
     inLanguage: "fr",
     articleSection: a.category,
-    author: { "@type": "Organization", name: "AktibCode" },
+    author: { "@type": "Person", name: a.author, url: "a-propos.html" },
     publisher: { "@type": "Organization", name: "AktibCode" },
   };
 
@@ -229,6 +229,7 @@ function buildArticle(a) {
     title: `${a.title} — AktibCode`,
     description: a.dek,
     image: a.cover,
+    author: a.author,
     extra: `<meta property="article:published_time" content="${a.date}">
   <meta property="article:section" content="${esc(a.category)}">
   <script type="application/ld+json">${JSON.stringify(jsonLd)}</script>`,
@@ -250,7 +251,7 @@ function buildArticle(a) {
           <h1 class="article-title">${a.title}</h1>
           <p class="article-dek">${a.dek}</p>
           <div class="article-meta">
-            <span class="author"><span class="author-badge" aria-hidden="true">A</span>${a.author}</span>
+            <span class="author"><span class="author-badge" aria-hidden="true">${esc(a.author.charAt(0).toUpperCase())}</span>${a.author}</span>
             <time datetime="${a.date}">${formatDate(a.date)}</time>
             <span>${minutes} min de lecture</span>
           </div>
@@ -262,7 +263,7 @@ function buildArticle(a) {
           <img src="${a.cover}" alt="${esc(a.coverAlt)}" width="1400" height="933">
           <figcaption>
             <span>${a.category} · ${formatDate(a.date, "short")}</span>
-            <span>Illustration : AktibCode</span>
+            <span>Portrait : Mbarassem</span>
           </figcaption>
         </figure>
       </div>
