@@ -30,7 +30,7 @@ const ARTICLES = [
     date: "2026-11-18",
     author: "Mbairassem",
     cover: "assets/images/api.jpg",
-    coverAlt: "Mbarassem, en chemise noire brodée, pose à côté d’une grande prise électrique orange reliée à deux serveurs verts.",
+    coverAlt: "Mbairassem, en chemise noire brodée, pose à côté d’une grande prise électrique orange reliée à deux serveurs verts.",
     featured: true,
     pullQuote: "Une API ne vous donne pas la centrale électrique. Elle vous donne une prise aux normes, et le mode d’emploi.",
     blocks: [
@@ -72,7 +72,7 @@ const ARTICLES = [
     date: "2026-11-12",
     author: "Mbairassem",
     cover: "assets/images/ia.jpg",
-    coverAlt: "Mbarassem tend un jeton orange vers un perroquet mécanique en circuits imprimés, entouré de graphiques.",
+    coverAlt: "Mbairassem tend un jeton orange vers un perroquet mécanique en circuits imprimés, entouré de graphiques.",
     pullQuote: "Un modèle de langage ne cherche pas la vérité. Il cherche la suite la plus probable.",
     blocks: [
       { type: "p", text: "Demandez à un modèle de langage de vous expliquer la photosynthèse, d’écrire un poème sur les réseaux ou de corriger un e-mail. La réponse arrive, fluide, souvent convaincante. D’où vient-elle ? Pas d’une base de données de réponses toute faites, ni d’une compréhension humaine. D’un calcul de probabilités, répété mot après mot." },
@@ -113,7 +113,7 @@ const ARTICLES = [
     date: "2026-11-05",
     author: "Mbairassem",
     cover: "assets/images/https.jpg",
-    coverAlt: "Mbarassem devant une enveloppe scellée, un grand cadenas vert et une clé orange.",
+    coverAlt: "Mbairassem devant une enveloppe scellée, un grand cadenas vert et une clé orange.",
     pullQuote: "HTTPS protège le trajet, pas l’intention. Un site de phishing peut très bien avoir un cadenas.",
     blocks: [
       { type: "p", text: "Quand vous saisissez un mot de passe, le petit cadenas à côté de l’adresse vous rassure. Mais que garantit-il exactement ? Pour le comprendre, il faut regarder ce qui circule entre votre navigateur et le serveur — et ce qui pourrait l’intercepter." },
@@ -153,7 +153,7 @@ const ARTICLES = [
     date: "2026-10-28",
     author: "Mbairassem",
     cover: "assets/images/cloud.jpg",
-    coverAlt: "Mbarassem dans une allée de serveurs verts, sous un nuage de béton relié par des câbles.",
+    coverAlt: "Mbairassem dans une allée de serveurs verts, sous un nuage de béton relié par des câbles.",
     pullQuote: "Le cloud, c’est l’informatique de quelqu’un d’autre, facturée à l’usage, derrière un contrat.",
     blocks: [
       { type: "p", text: "Vos photos, vos e-mails, les vidéos que vous regardez : une partie de votre vie numérique vit « dans le cloud ». L’expression suggère quelque chose de léger, d’aérien, presque immatériel. La réalité est plus lourde : des bâtiments, des climatiseurs, des câbles sous-marins et des groupes électrogènes." },
@@ -193,7 +193,7 @@ const ARTICLES = [
     date: "2026-10-20",
     author: "Mbairassem",
     cover: "assets/images/base-de-donnees.jpg",
-    coverAlt: "Mbarassem ouvre un tiroir de classeur rempli de fiches orange dans une salle d’archives.",
+    coverAlt: "Mbairassem ouvre un tiroir de classeur rempli de fiches orange dans une salle d’archives.",
     pullQuote: "Une base de données ne stocke pas seulement des informations. Elle fait respecter des promesses.",
     blocks: [
       { type: "p", text: "Un tableur suffit pour gérer une liste d’invités. Il devient vite dangereux pour une boutique, une banque ou un hôpital. Pourquoi ? Parce qu’une base de données ne se contente pas d’enregistrer : elle garantit que les informations restent cohérentes, même quand plusieurs personnes écrivent en même temps." },
@@ -227,7 +227,7 @@ const ARTICLES = [
     date: "2026-10-09",
     author: "Mbairassem",
     cover: "assets/images/web.jpg",
-    coverAlt: "Mbarassem appuie sur un gros bouton orange devant un chronomètre et des fenêtres empilées.",
+    coverAlt: "Mbairassem appuie sur un gros bouton orange devant un chronomètre et des fenêtres empilées.",
     pullQuote: "Chaque page web est le résultat d’une négociation entre des dizaines de machines qui ne se sont jamais vues.",
     blocks: [
       { type: "p", text: "Un clic, et la page est là. Cette immédiateté cache une séquence précise : traduire un nom en adresse, ouvrir une connexion, demander un document, le fabriquer, le mettre en page. Comprendre ce trajet aide à diagnostiquer les lenteurs — et à mieux comprendre le web." },
@@ -269,7 +269,7 @@ const ARTICLES = [
     date: "2026-09-30",
     author: "Mbairassem",
     cover: "assets/images/open-source.jpg",
-    coverAlt: "Mbarassem dans un atelier, un document scellé à la main, entouré d’outils et de plans.",
+    coverAlt: "Mbairassem dans un atelier, un document scellé à la main, entouré d’outils et de plans.",
     pullQuote: "Open source ne veut pas dire gratuit. Cela veut dire : le code source est disponible, et vous avez le droit de l’utiliser, de l’étudier, de le modifier et de le partager.",
     blocks: [
       { type: "p", text: "Linux, Firefox, VLC, Blender, une grande partie des serveurs du web : l’open source est partout. Pourtant, l’expression reste floue pour beaucoup. On la confond avec « gratuit », avec « communautaire », ou avec une idéologie. La définition est plus précise, et plus intéressante." },
@@ -310,7 +310,7 @@ const ARTICLES = [
     date: "2026-09-22",
     author: "Mbairassem",
     cover: "assets/images/smartphone.jpg",
-    coverAlt: "Mbarassem tient un smartphone orange surchauffé, entouré de câbles emmêlés, d’engrenages et d’un escargot.",
+    coverAlt: "Mbairassem tient un smartphone orange surchauffé, entouré de câbles emmêlés, d’engrenages et d’un escargot.",
     pullQuote: "Un téléphone n’est pas un objet figé : c’est un équilibre instable entre du matériel qui vieillit et du logiciel qui grossit.",
     blocks: [
       { type: "p", text: "Le scénario est familier. Le premier jour, tout est fluide. Deux ans plus tard, les applications mettent dix secondes à s’ouvrir, la batterie fond et l’appareil chauffe. On parle d’obsolescence programmée — parfois à raison, souvent à tort. Le mécanisme réel est plus nuancé, et plus intéressant." },
