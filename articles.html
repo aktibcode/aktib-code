@@ -7,7 +7,7 @@
   <meta name="description" content="Le catalogue des articles AktibCode : décryptages, fondamentaux, intelligence artificielle, sécurité et culture numérique. Filtrez par thème ou par mot-clé.">
   <meta name="theme-color" content="#f3efe3">
   <meta property="og:title" content="Tous les articles — AktibCode">
-  <meta property="og:description" content="Décryptages, fondamentaux, IA, sécurité et culture numérique. La tech, sans le jargon.">
+  <meta property="og:description" content="Le catalogue des articles AktibCode : décryptages, fondamentaux, intelligence artificielle, sécurité et culture numérique. Filtrez par thème ou par mot-clé.">
   <meta property="og:type" content="website">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <script>
@@ -23,6 +23,16 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
+  <meta property="og:url" content="https://aktibcode.com/articles.html">
+  <meta property="og:site_name" content="AktibCode">
+  <meta property="og:image" content="https://aktibcode.com/assets/images/hero.jpg">
+  <meta property="og:image:alt" content="Illustration AktibCode">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Tous les articles — AktibCode">
+  <meta name="twitter:description" content="Le catalogue des articles AktibCode : décryptages, fondamentaux, intelligence artificielle, sécurité et culture numérique. Filtrez par thème ou par mot-clé.">
+  <meta name="twitter:image" content="https://aktibcode.com/assets/images/hero.jpg">
+  <meta name="author" content="AktibCode">
+  <link rel="canonical" href="https://aktibcode.com/articles.html">
 </head>
 <body data-page="articles">
   <a class="skip-link" href="#contenu">Aller au contenu</a>
@@ -67,19 +77,24 @@
       <div class="container">
         <p class="eyebrow"><span class="dot"></span>Le catalogue</p>
         <h1>Tous les <em>articles</em>.</h1>
-        <p class="lede">Huit textes pour comprendre les rouages du numérique, sans prérequis. Filtrez par thème ou cherchez un mot qui vous intrigue.</p>
+        <p class="lede"><span data-count="articles">huit</span> textes pour comprendre les rouages du numérique, sans prérequis. Filtrez par thème ou cherchez un mot qui vous intrigue.</p>
       </div>
     </header>
 
     <div class="container">
       <div class="toolbar">
-        <div class="filters" id="filters" role="group" aria-label="Filtrer par thème"></div>
+        <div class="filters" id="filters" role="group" aria-label="Filtrer par thème">
+          <!-- build:filters -->
+<button class="filter-chip" type="button" data-cat="Tous" aria-pressed="true">Tout</button><button class="filter-chip" type="button" data-cat="Décryptage" aria-pressed="false">Décryptage</button><button class="filter-chip" type="button" data-cat="Intelligence artificielle" aria-pressed="false">Intelligence artificielle</button><button class="filter-chip" type="button" data-cat="Sécurité" aria-pressed="false">Sécurité</button><button class="filter-chip" type="button" data-cat="Fondamentaux" aria-pressed="false">Fondamentaux</button><button class="filter-chip" type="button" data-cat="Culture" aria-pressed="false">Culture</button>
+<!-- /build:filters -->
+        </div>
         <div class="search-box">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg>
-          <label class="sr-only" for="article-search" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);">Rechercher un article</label>
+          <label class="sr-only" for="article-search">Rechercher un article</label>
           <input type="search" id="article-search" placeholder="Rechercher un article…" autocomplete="off" inputmode="search" enterkeyhint="search" spellcheck="false">
         </div>
       </div>
+      <noscript><p class="lede">Le catalogue reste consultable ci-dessous ; la recherche et les filtres nécessitent JavaScript.</p></noscript>
 
       <div class="results-bar">
         <span id="results-count" aria-live="polite">8 articles</span>
@@ -87,22 +102,121 @@
       </div>
 
       <div class="article-grid" id="articles-grid" style="padding-bottom: clamp(50px, 7vw, 90px);">
-        <noscript>
-          <div class="empty-state">
-            <strong>Le catalogue interactif nécessite JavaScript.</strong>
-            <p style="margin-top:10px;">Vous pouvez néanmoins lire les articles directement :</p>
-            <p style="margin-top:8px;">
-              <a href="api-prise-electrique.html">Une API, c’est une prise électrique</a> ·
-              <a href="ia-perroquet-statistique.html">L’IA est un perroquet statistique</a> ·
-              <a href="https-cadenas.html">HTTPS et le cadenas</a> ·
-              <a href="cloud-beton.html">Le cloud est en béton</a> ·
-              <a href="base-de-donnees-classeur.html">Une base de données, un classeur</a> ·
-              <a href="clic-page-300ms.html">Du clic à la page</a> ·
-              <a href="open-source-licence.html">Open source, une licence</a> ·
-              <a href="telephone-qui-rame.html">Pourquoi votre téléphone rame</a>
-            </p>
-          </div>
-        </noscript>
+        <!-- build:articles-grid -->
+
+    <article class="article-card" data-category="Décryptage" data-search="Une API, c’est une prise électrique pour logiciels Derrière chaque paiement en ligne, chaque bulletin météo et chaque réponse de chatbot, il y a une API. Voici ce que c’est, sans jargon. Décryptage Une API est un contrat qui permet à deux logiciels de se parler sans se connaître. Elle standardise l’adresse, le format des données et les règles d’accès. Elle crée de la modularité, mais aussi une dépendance à surveiller.">
+      <div class="card-media">
+        <img src="assets/images/api.jpg" srcset="assets/images/api-640.webp 640w, assets/images/api-960.webp 960w, assets/images/api-1400.webp 1400w" sizes="(max-width: 620px) 100vw, (max-width: 1080px) 50vw, 33vw" alt="Mbairassem, en chemise noire brodée, pose à côté d’une grande prise électrique orange reliée à deux serveurs verts." width="1400" height="933" loading="lazy" decoding="async">
+      </div>
+      <div class="card-body">
+        <span class="card-cat" style="--cat:#C53A12">Décryptage</span>
+        <h3 class="card-title"><a href="api-prise-electrique.html">Une API, c’est une prise électrique pour logiciels</a></h3>
+        <p class="card-dek">Derrière chaque paiement en ligne, chaque bulletin météo et chaque réponse de chatbot, il y a une API. Voici ce que c’est, sans jargon.</p>
+        <div class="card-foot">
+          <time datetime="2026-11-18">18 nov. 2026</time>
+          <span class="read">3 min de lecture</span>
+        </div>
+      </div>
+    </article>
+    <article class="article-card" data-category="Intelligence artificielle" data-search="L’IA générative est un perroquet statistique Comprendre une IA générative commence par un mécanisme : elle calcule ce qui a le plus de chances de venir après. Et c’est déjà une petite révolution. Intelligence artificielle Un modèle de langage produit une suite probable sans vérifier les faits. Les hallucinations sont inhérentes à la méthode : la vérification reste indispensable. Ses bons usages reposent sur des sources fiables et un regard humain.">
+      <div class="card-media">
+        <img src="assets/images/ia.jpg" srcset="assets/images/ia-640.webp 640w, assets/images/ia-960.webp 960w, assets/images/ia-1400.webp 1400w" sizes="(max-width: 620px) 100vw, (max-width: 1080px) 50vw, 33vw" alt="Mbairassem tend un jeton orange vers un perroquet mécanique en circuits imprimés, entouré de graphiques." width="1400" height="933" loading="lazy" decoding="async">
+      </div>
+      <div class="card-body">
+        <span class="card-cat" style="--cat:#6A4BFF">IA</span>
+        <h3 class="card-title"><a href="ia-perroquet-statistique.html">L’IA générative est un perroquet statistique</a></h3>
+        <p class="card-dek">Comprendre une IA générative commence par un mécanisme : elle calcule ce qui a le plus de chances de venir après. Et c’est déjà une petite révolution.</p>
+        <div class="card-foot">
+          <time datetime="2026-11-12">12 nov. 2026</time>
+          <span class="read">3 min de lecture</span>
+        </div>
+      </div>
+    </article>
+    <article class="article-card" data-category="Sécurité" data-search="HTTPS : ce qui se passe quand le cadenas apparaît Le petit cadenas ne dit pas que le site est honnête. Il dit que la conversation est scellée. La nuance vaut de l’or. Sécurité HTTPS chiffre la conversation et authentifie le serveur grâce à un certificat. Il ne garantit ni l’honnêteté du site, ni la véracité de son contenu. Vérifiez toujours le nom de domaine, même quand le cadenas est présent.">
+      <div class="card-media">
+        <img src="assets/images/https.jpg" srcset="assets/images/https-640.webp 640w, assets/images/https-960.webp 960w, assets/images/https-1400.webp 1400w" sizes="(max-width: 620px) 100vw, (max-width: 1080px) 50vw, 33vw" alt="Mbairassem devant une enveloppe scellée, un grand cadenas vert et une clé orange." width="1400" height="933" loading="lazy" decoding="async">
+      </div>
+      <div class="card-body">
+        <span class="card-cat" style="--cat:#1F6B54">Sécurité</span>
+        <h3 class="card-title"><a href="https-cadenas.html">HTTPS : ce qui se passe quand le cadenas apparaît</a></h3>
+        <p class="card-dek">Le petit cadenas ne dit pas que le site est honnête. Il dit que la conversation est scellée. La nuance vaut de l’or.</p>
+        <div class="card-foot">
+          <time datetime="2026-11-05">05 nov. 2026</time>
+          <span class="read">3 min de lecture</span>
+        </div>
+      </div>
+    </article>
+    <article class="article-card" data-category="Décryptage" data-search="Le cloud n’existe pas — il est en béton quelque part « Dans le cloud » ne veut pas dire « dans les airs ». Cela veut dire : sur l’ordinateur de quelqu’un d’autre, dans un bâtiment très réel. Décryptage Le cloud repose sur des centres de données physiques, énergivores et territoriaux. On loue des machines, des plateformes ou des logiciels — avec des contrats et des limites. La dépendance et les coûts de sortie méritent d’être anticipés dès le départ.">
+      <div class="card-media">
+        <img src="assets/images/cloud.jpg" srcset="assets/images/cloud-640.webp 640w, assets/images/cloud-960.webp 960w, assets/images/cloud-1400.webp 1400w" sizes="(max-width: 620px) 100vw, (max-width: 1080px) 50vw, 33vw" alt="Mbairassem dans une allée de serveurs verts, sous un nuage de béton relié par des câbles." width="1400" height="933" loading="lazy" decoding="async">
+      </div>
+      <div class="card-body">
+        <span class="card-cat" style="--cat:#C53A12">Décryptage</span>
+        <h3 class="card-title"><a href="cloud-beton.html">Le cloud n’existe pas — il est en béton quelque part</a></h3>
+        <p class="card-dek">« Dans le cloud » ne veut pas dire « dans les airs ». Cela veut dire : sur l’ordinateur de quelqu’un d’autre, dans un bâtiment très réel.</p>
+        <div class="card-foot">
+          <time datetime="2026-10-28">28 oct. 2026</time>
+          <span class="read">3 min de lecture</span>
+        </div>
+      </div>
+    </article>
+    <article class="article-card" data-category="Fondamentaux" data-search="Une base de données, c’est un classeur avec des règles Sans base de données, votre boutique en ligne vendrait le même livre à deux personnes. Ou perdrait la moitié de ses commandes au redémarrage. Fondamentaux Une base garantit la cohérence des données grâce à des règles et des transactions. Les clés relient les tables et évitent les duplications dangereuses. Les index accélèrent les recherches, au prix d’un peu d’espace et d’écriture.">
+      <div class="card-media">
+        <img src="assets/images/base-de-donnees.jpg" srcset="assets/images/base-de-donnees-640.webp 640w, assets/images/base-de-donnees-960.webp 960w, assets/images/base-de-donnees-1400.webp 1400w" sizes="(max-width: 620px) 100vw, (max-width: 1080px) 50vw, 33vw" alt="Mbairassem ouvre un tiroir de classeur rempli de fiches orange dans une salle d’archives." width="1400" height="933" loading="lazy" decoding="async">
+      </div>
+      <div class="card-body">
+        <span class="card-cat" style="--cat:#2C5FD6">Fondamentaux</span>
+        <h3 class="card-title"><a href="base-de-donnees-classeur.html">Une base de données, c’est un classeur avec des règles</a></h3>
+        <p class="card-dek">Sans base de données, votre boutique en ligne vendrait le même livre à deux personnes. Ou perdrait la moitié de ses commandes au redémarrage.</p>
+        <div class="card-foot">
+          <time datetime="2026-10-20">20 oct. 2026</time>
+          <span class="read">3 min de lecture</span>
+        </div>
+      </div>
+    </article>
+    <article class="article-card" data-category="Fondamentaux" data-search="Du clic à la page : le voyage de 300 millisecondes Vous tapez une adresse, vous appuyez sur Entrée, la page apparaît. Entre les deux, une chaîne logistique invisible. Fondamentaux Une visite web enchaîne DNS, connexion, requête, réponse, puis rendu. Le cache et la proximité des serveurs réduisent fortement les délais. Alléger les pages améliore à la fois l’expérience et l’empreinte environnementale.">
+      <div class="card-media">
+        <img src="assets/images/web.jpg" srcset="assets/images/web-640.webp 640w, assets/images/web-960.webp 960w, assets/images/web-1400.webp 1400w" sizes="(max-width: 620px) 100vw, (max-width: 1080px) 50vw, 33vw" alt="Mbairassem appuie sur un gros bouton orange devant un chronomètre et des fenêtres empilées." width="1400" height="933" loading="lazy" decoding="async">
+      </div>
+      <div class="card-body">
+        <span class="card-cat" style="--cat:#2C5FD6">Fondamentaux</span>
+        <h3 class="card-title"><a href="clic-page-300ms.html">Du clic à la page : le voyage de 300 millisecondes</a></h3>
+        <p class="card-dek">Vous tapez une adresse, vous appuyez sur Entrée, la page apparaît. Entre les deux, une chaîne logistique invisible.</p>
+        <div class="card-foot">
+          <time datetime="2026-10-09">09 oct. 2026</time>
+          <span class="read">3 min de lecture</span>
+        </div>
+      </div>
+    </article>
+    <article class="article-card" data-category="Culture" data-search="Open source : le code que vous pouvez utiliser, étudier et partager Ce n’est pas « gratuit », ce n’est pas un modèle économique, et ce n’est pas toujours un cadeau désintéressé. C’est d’abord une licence. Culture L’open source est défini par une licence qui garantit quatre libertés, pas par un prix. Les modèles de financement des mainteneurs sont un enjeu de sécurité et de durabilité. La transparence du code ne remplace ni l’audit ni la maintenance.">
+      <div class="card-media">
+        <img src="assets/images/open-source.jpg" srcset="assets/images/open-source-640.webp 640w, assets/images/open-source-960.webp 960w, assets/images/open-source-1400.webp 1400w" sizes="(max-width: 620px) 100vw, (max-width: 1080px) 50vw, 33vw" alt="Mbairassem dans un atelier, un document scellé à la main, entouré d’outils et de plans." width="1400" height="933" loading="lazy" decoding="async">
+      </div>
+      <div class="card-body">
+        <span class="card-cat" style="--cat:#A97600">Culture</span>
+        <h3 class="card-title"><a href="open-source-licence.html">Open source : le code que vous pouvez utiliser, étudier et partager</a></h3>
+        <p class="card-dek">Ce n’est pas « gratuit », ce n’est pas un modèle économique, et ce n’est pas toujours un cadeau désintéressé. C’est d’abord une licence.</p>
+        <div class="card-foot">
+          <time datetime="2026-09-30">30 sept. 2026</time>
+          <span class="read">3 min de lecture</span>
+        </div>
+      </div>
+    </article>
+    <article class="article-card" data-category="Culture" data-search="Pourquoi votre téléphone rame au bout de deux ans Ce n’est pas (toujours) une conspiration. C’est un mélange de mises à jour, de batterie fatiguée, de stockage saturé et d’applis qui grossissent. Culture La batterie et le stockage sont les deux causes les plus fréquentes de ralentissement. Le logiciel évolue plus vite que le matériel, ce qui réduit progressivement les marges. Réparabilité et durée des mises à jour sont des critères d’achat décisifs.">
+      <div class="card-media">
+        <img src="assets/images/smartphone.jpg" srcset="assets/images/smartphone-640.webp 640w, assets/images/smartphone-960.webp 960w, assets/images/smartphone-1400.webp 1400w" sizes="(max-width: 620px) 100vw, (max-width: 1080px) 50vw, 33vw" alt="Mbairassem tient un smartphone orange surchauffé, entouré de câbles emmêlés, d’engrenages et d’un escargot." width="1400" height="933" loading="lazy" decoding="async">
+      </div>
+      <div class="card-body">
+        <span class="card-cat" style="--cat:#A97600">Culture</span>
+        <h3 class="card-title"><a href="telephone-qui-rame.html">Pourquoi votre téléphone rame au bout de deux ans</a></h3>
+        <p class="card-dek">Ce n’est pas (toujours) une conspiration. C’est un mélange de mises à jour, de batterie fatiguée, de stockage saturé et d’applis qui grossissent.</p>
+        <div class="card-foot">
+          <time datetime="2026-09-22">22 sept. 2026</time>
+          <span class="read">3 min de lecture</span>
+        </div>
+      </div>
+    </article>
+<!-- /build:articles-grid -->
       </div>
     </div>
   </main>

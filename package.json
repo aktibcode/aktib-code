@@ -1,0 +1,16 @@
+{
+  "name": "aktib-code",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Magazine statique de vulgarisation tech AktibCode",
+  "scripts": {
+    "build": "node build.mjs",
+    "build:check": "node build.mjs --check",
+    "images": "python scripts/optimize-images.py",
+    "test": "node --test scripts/validate.test.mjs",
+    "check": "npm test"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

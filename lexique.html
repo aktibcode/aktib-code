@@ -7,7 +7,7 @@
   <meta name="description" content="API, LLM, token, HTTPS, transaction : les mots de la tech définis simplement, avec l’article pour aller plus loin.">
   <meta name="theme-color" content="#f3efe3">
   <meta property="og:title" content="Le lexique tech — AktibCode">
-  <meta property="og:description" content="Les mots de la tech, définis simplement.">
+  <meta property="og:description" content="API, LLM, token, HTTPS, transaction : les mots de la tech définis simplement, avec l’article pour aller plus loin.">
   <meta property="og:type" content="website">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <script>
@@ -23,6 +23,16 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
+  <meta property="og:url" content="https://aktibcode.com/lexique.html">
+  <meta property="og:site_name" content="AktibCode">
+  <meta property="og:image" content="https://aktibcode.com/assets/images/hero.jpg">
+  <meta property="og:image:alt" content="Illustration AktibCode">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Le lexique tech — AktibCode">
+  <meta name="twitter:description" content="API, LLM, token, HTTPS, transaction : les mots de la tech définis simplement, avec l’article pour aller plus loin.">
+  <meta name="twitter:image" content="https://aktibcode.com/assets/images/hero.jpg">
+  <meta name="author" content="AktibCode">
+  <link rel="canonical" href="https://aktibcode.com/lexique.html">
 </head>
 <body data-page="lexique">
   <a class="skip-link" href="#contenu">Aller au contenu</a>
@@ -75,19 +85,150 @@
       <div class="lex-toolbar">
         <div class="search-box" style="flex: 1 1 280px; max-width: 420px;">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg>
-          <label for="lex-search" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);">Rechercher une notion</label>
+          <label class="sr-only" for="lex-search">Rechercher une notion</label>
           <input type="search" id="lex-search" placeholder="Rechercher une notion…" autocomplete="off" inputmode="search" enterkeyhint="search" spellcheck="false">
         </div>
         <span id="lex-count" class="eyebrow" aria-live="polite" style="margin:0;">20 notions</span>
       </div>
+      <noscript><p class="lede">Toutes les définitions sont consultables ci-dessous ; la recherche nécessite JavaScript.</p></noscript>
 
       <div class="lex-groups" id="lex-groups">
-        <noscript>
-          <div class="empty-state">
-            <strong>Le lexique interactif nécessite JavaScript.</strong>
-            <p style="margin-top:10px;">Quelques définitions essentielles : API, algorithme, base de données, cloud, HTTPS, open source.</p>
-          </div>
-        </noscript>
+        <!-- build:lex-groups -->
+
+        <section class="lex-group" aria-labelledby="lettre-A">
+          <h2 class="lex-letter" id="lettre-A">A</h2>
+            <article class="lex-entry" id="algorithme">
+              <h3 class="lex-term">Algorithme</h3>
+              <p>Suite d’étapes précises pour résoudre un problème. Une recette de cuisine est un algorithme ; un programme est un algorithme écrit pour une machine.<br><a class="lex-link" href="ia-perroquet-statistique.html">Lire l’article <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></p>
+              <span class="lex-cat">Fondamentaux</span>
+            </article>
+            <article class="lex-entry" id="api">
+              <h3 class="lex-term">API</h3>
+              <p>Contrat qui permet à deux logiciels de communiquer : une adresse, un format de données et des règles d’accès. Pensez à une prise électrique standardisée.<br><a class="lex-link" href="api-prise-electrique.html">Lire l’article <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></p>
+              <span class="lex-cat">Développement</span>
+            </article>
+        </section>
+        <section class="lex-group" aria-labelledby="lettre-B">
+          <h2 class="lex-letter" id="lettre-B">B</h2>
+            <article class="lex-entry" id="base-de-donnees">
+              <h3 class="lex-term">Base de données</h3>
+              <p>Système qui stocke des informations structurées et garantit leur cohérence, même quand plusieurs personnes les consultent ou les modifient en même temps.<br><a class="lex-link" href="base-de-donnees-classeur.html">Lire l’article <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></p>
+              <span class="lex-cat">Fondamentaux</span>
+            </article>
+        </section>
+        <section class="lex-group" aria-labelledby="lettre-C">
+          <h2 class="lex-letter" id="lettre-C">C</h2>
+            <article class="lex-entry" id="cache">
+              <h3 class="lex-term">Cache</h3>
+              <p>Copie temporaire de données conservée pour répondre plus vite. Le cache évite de refaire un calcul ou un téléchargement déjà effectué.<br><a class="lex-link" href="clic-page-300ms.html">Lire l’article <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></p>
+              <span class="lex-cat">Web</span>
+            </article>
+            <article class="lex-entry" id="centre-de-donnees">
+              <h3 class="lex-term">Centre de données</h3>
+              <p>Bâtiment rempli de serveurs, alimenté en électricité et refroidi en permanence. C’est l’infrastructure physique derrière le « cloud ».<br><a class="lex-link" href="cloud-beton.html">Lire l’article <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></p>
+              <span class="lex-cat">Infrastructure</span>
+            </article>
+            <article class="lex-entry" id="chiffrement">
+              <h3 class="lex-term">Chiffrement</h3>
+              <p>Transformation d’un message en contenu illisible sans la clé. Le chiffrement protège la confidentialité ; il ne garantit pas l’honnêteté de l’émetteur.<br><a class="lex-link" href="https-cadenas.html">Lire l’article <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></p>
+              <span class="lex-cat">Sécurité</span>
+            </article>
+            <article class="lex-entry" id="cloud">
+              <h3 class="lex-term">Cloud</h3>
+              <p>Location de ressources informatiques (serveurs, stockage, logiciels) accessibles par réseau. Le cloud est l’informatique de quelqu’un d’autre, dans un bâtiment réel.<br><a class="lex-link" href="cloud-beton.html">Lire l’article <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></p>
+              <span class="lex-cat">Infrastructure</span>
+            </article>
+            <article class="lex-entry" id="code-source">
+              <h3 class="lex-term">Code source</h3>
+              <p>Texte écrit par des humains dans un langage de programmation, qui décrit le fonctionnement d’un logiciel. Il est compilé ou interprété pour être exécuté.<br><a class="lex-link" href="open-source-licence.html">Lire l’article <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></p>
+              <span class="lex-cat">Développement</span>
+            </article>
+            <article class="lex-entry" id="cookie">
+              <h3 class="lex-term">Cookie</h3>
+              <p>Petit fichier déposé par un site dans votre navigateur. Il sert à mémoriser une session ou des préférences, et parfois à vous suivre à des fins publicitaires.<br><a class="lex-link" href="https-cadenas.html">Lire l’article <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></p>
+              <span class="lex-cat">Web</span>
+            </article>
+        </section>
+        <section class="lex-group" aria-labelledby="lettre-D">
+          <h2 class="lex-letter" id="lettre-D">D</h2>
+            <article class="lex-entry" id="dns">
+              <h3 class="lex-term">DNS</h3>
+              <p>Annuaire d’Internet : il traduit les noms de domaine (aktibcode.com) en adresses IP compréhensibles par les machines.<br><a class="lex-link" href="clic-page-300ms.html">Lire l’article <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></p>
+              <span class="lex-cat">Web</span>
+            </article>
+        </section>
+        <section class="lex-group" aria-labelledby="lettre-H">
+          <h2 class="lex-letter" id="lettre-H">H</h2>
+            <article class="lex-entry" id="https">
+              <h3 class="lex-term">HTTPS</h3>
+              <p>Version chiffrée et authentifiée du protocole HTTP. Elle protège la conversation entre le navigateur et le serveur au moyen de TLS.<br><a class="lex-link" href="https-cadenas.html">Lire l’article <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></p>
+              <span class="lex-cat">Sécurité</span>
+            </article>
+        </section>
+        <section class="lex-group" aria-labelledby="lettre-I">
+          <h2 class="lex-letter" id="lettre-I">I</h2>
+            <article class="lex-entry" id="index">
+              <h3 class="lex-term">Index</h3>
+              <p>Structure qui trie certaines données pour accélérer les recherches, comme l’index d’un livre. Il accélère les lectures mais alourdit les écritures.<br><a class="lex-link" href="base-de-donnees-classeur.html">Lire l’article <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></p>
+              <span class="lex-cat">Fondamentaux</span>
+            </article>
+        </section>
+        <section class="lex-group" aria-labelledby="lettre-L">
+          <h2 class="lex-letter" id="lettre-L">L</h2>
+            <article class="lex-entry" id="latence">
+              <h3 class="lex-term">Latence</h3>
+              <p>Délai entre une demande et le début de la réponse. Une latence faible donne une impression de réactivité ; elle dépend surtout de la distance et du réseau.<br><a class="lex-link" href="clic-page-300ms.html">Lire l’article <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></p>
+              <span class="lex-cat">Infrastructure</span>
+            </article>
+            <article class="lex-entry" id="llm">
+              <h3 class="lex-term">LLM</h3>
+              <p>Grand modèle de langage (Large Language Model). Système entraîné à prédire la suite probable d’un texte, ce qui lui permet de rédiger, résumer ou converser.<br><a class="lex-link" href="ia-perroquet-statistique.html">Lire l’article <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></p>
+              <span class="lex-cat">Intelligence artificielle</span>
+            </article>
+        </section>
+        <section class="lex-group" aria-labelledby="lettre-O">
+          <h2 class="lex-letter" id="lettre-O">O</h2>
+            <article class="lex-entry" id="open-source">
+              <h3 class="lex-term">Open source</h3>
+              <p>Logiciel dont la licence garantit le droit d’exécuter, d’étudier, de modifier et de redistribuer le code source. Ce n’est pas synonyme de gratuit.<br><a class="lex-link" href="open-source-licence.html">Lire l’article <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></p>
+              <span class="lex-cat">Culture</span>
+            </article>
+        </section>
+        <section class="lex-group" aria-labelledby="lettre-P">
+          <h2 class="lex-letter" id="lettre-P">P</h2>
+            <article class="lex-entry" id="phishing">
+              <h3 class="lex-term">Phishing</h3>
+              <p>Hameçonnage : message ou site imitant une organisation de confiance pour vous pousser à révéler un mot de passe ou à effectuer un paiement.<br><a class="lex-link" href="https-cadenas.html">Lire l’article <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></p>
+              <span class="lex-cat">Sécurité</span>
+            </article>
+            <article class="lex-entry" id="protocole">
+              <h3 class="lex-term">Protocole</h3>
+              <p>Ensemble de règles qui permettent à des machines de communiquer. HTTP, TCP et TLS sont des protocoles aux rôles complémentaires.<br><a class="lex-link" href="clic-page-300ms.html">Lire l’article <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></p>
+              <span class="lex-cat">Web</span>
+            </article>
+        </section>
+        <section class="lex-group" aria-labelledby="lettre-S">
+          <h2 class="lex-letter" id="lettre-S">S</h2>
+            <article class="lex-entry" id="serveur">
+              <h3 class="lex-term">Serveur</h3>
+              <p>Ordinateur ou logiciel qui répond à des demandes envoyées par d’autres machines (les clients). Il peut servir des pages web, des fichiers ou des API.<br><a class="lex-link" href="clic-page-300ms.html">Lire l’article <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></p>
+              <span class="lex-cat">Infrastructure</span>
+            </article>
+        </section>
+        <section class="lex-group" aria-labelledby="lettre-T">
+          <h2 class="lex-letter" id="lettre-T">T</h2>
+            <article class="lex-entry" id="token">
+              <h3 class="lex-term">Token</h3>
+              <p>Petite unité de texte (souvent un morceau de mot) utilisée par les modèles de langage. Le modèle prédit le token suivant, pas la phrase entière.<br><a class="lex-link" href="ia-perroquet-statistique.html">Lire l’article <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></p>
+              <span class="lex-cat">Intelligence artificielle</span>
+            </article>
+            <article class="lex-entry" id="transaction">
+              <h3 class="lex-term">Transaction</h3>
+              <p>Ensemble d’opérations sur une base de données qui réussit entièrement ou est entièrement annulé. Elle empêche les états à moitié mis à jour.<br><a class="lex-link" href="base-de-donnees-classeur.html">Lire l’article <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></p>
+              <span class="lex-cat">Fondamentaux</span>
+            </article>
+        </section>
+<!-- /build:lex-groups -->
       </div>
 
       <div class="section-label" style="margin-top: 54px;">Une notion manque ?</div>

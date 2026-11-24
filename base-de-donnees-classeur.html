@@ -7,13 +7,21 @@
   <meta name="description" content="Sans base de données, votre boutique en ligne vendrait le même livre à deux personnes. Ou perdrait la moitié de ses commandes au redémarrage.">
   <meta name="author" content="Mbairassem">
   <meta name="theme-color" content="#f3efe3">
+  <link rel="canonical" href="https://aktibcode.com/base-de-donnees-classeur.html">
   <meta property="og:title" content="Une base de données, c’est un classeur avec des règles — AktibCode">
   <meta property="og:description" content="Sans base de données, votre boutique en ligne vendrait le même livre à deux personnes. Ou perdrait la moitié de ses commandes au redémarrage.">
   <meta property="og:type" content="article">
-  <meta property="og:image" content="assets/images/base-de-donnees.jpg">
+  <meta property="og:url" content="https://aktibcode.com/base-de-donnees-classeur.html">
+  <meta property="og:site_name" content="AktibCode">
+  <meta property="og:image" content="https://aktibcode.com/assets/images/base-de-donnees.jpg">
+  <meta property="og:image:alt" content="Mbairassem ouvre un tiroir de classeur rempli de fiches orange dans une salle d’archives.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Une base de données, c’est un classeur avec des règles — AktibCode">
+  <meta name="twitter:description" content="Sans base de données, votre boutique en ligne vendrait le même livre à deux personnes. Ou perdrait la moitié de ses commandes au redémarrage.">
+  <meta name="twitter:image" content="https://aktibcode.com/assets/images/base-de-donnees.jpg">
   <meta property="article:published_time" content="2026-10-20">
   <meta property="article:section" content="Fondamentaux">
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"Une base de données, c’est un classeur avec des règles","description":"Sans base de données, votre boutique en ligne vendrait le même livre à deux personnes. Ou perdrait la moitié de ses commandes au redémarrage.","image":"assets/images/base-de-donnees.jpg","datePublished":"2026-10-20","dateModified":"2026-10-20","inLanguage":"fr","articleSection":"Fondamentaux","author":{"@type":"Person","name":"Mbairassem","url":"a-propos.html"},"publisher":{"@type":"Organization","name":"AktibCode"}}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"Une base de données, c’est un classeur avec des règles","description":"Sans base de données, votre boutique en ligne vendrait le même livre à deux personnes. Ou perdrait la moitié de ses commandes au redémarrage.","image":"https://aktibcode.com/assets/images/base-de-donnees.jpg","datePublished":"2026-10-20","dateModified":"2026-10-20","inLanguage":"fr","articleSection":"Fondamentaux","mainEntityOfPage":"https://aktibcode.com/base-de-donnees-classeur.html","citation":["https://www.postgresql.org/docs/current/tutorial-transactions.html","https://www.postgresql.org/docs/current/indexes.html"],"author":{"@type":"Person","name":"Mbairassem","url":"https://aktibcode.com/a-propos.html"},"publisher":{"@type":"Organization","name":"AktibCode","url":"https://aktibcode.com","logo":"https://aktibcode.com/assets/favicon.svg"}}</script>
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <script>
     (function () {
@@ -42,7 +50,7 @@
         <span class="logo-word">Aktib<em>Code</em></span>
       </a>
       <nav class="site-nav" aria-label="Navigation principale">
-        <a href="articles.html" aria-current="page">Articles</a>
+        <a href="articles.html">Articles</a>
         <a href="lexique.html">Lexique</a>
         <a href="a-propos.html">À propos</a>
       </nav>
@@ -90,7 +98,7 @@
 
       <div class="container">
         <figure class="article-cover">
-          <img src="assets/images/base-de-donnees.jpg" alt="Mbairassem ouvre un tiroir de classeur rempli de fiches orange dans une salle d’archives." width="1400" height="933">
+          <img src="assets/images/base-de-donnees.jpg" srcset="assets/images/base-de-donnees-640.webp 640w, assets/images/base-de-donnees-960.webp 960w, assets/images/base-de-donnees-1400.webp 1400w" sizes="(max-width: 1240px) 100vw, 1240px" alt="Mbairassem ouvre un tiroir de classeur rempli de fiches orange dans une salle d’archives." width="1400" height="933" loading="eager" decoding="async" fetchpriority="high">
           <figcaption>
             <span>Fondamentaux · 20 oct. 2026</span>
             <span>Portrait : Mbairassem</span>
@@ -111,7 +119,7 @@
         </aside>
 
         <div class="prose">
-          <p>Un tableur suffit pour gérer une liste d’invités. Il devient vite dangereux pour une boutique, une banque ou un hôpital. Pourquoi ? Parce qu’une base de données ne se contente pas d’enregistrer : elle garantit que les informations restent cohérentes, même quand plusieurs personnes écrivent en même temps.</p>,<h2 id="le-carnet-de-notes-ne-suffit-pas">Le carnet de notes ne suffit pas</h2>,<p>Imaginez un cahier où chaque vente est notée à la main. Deux vendeurs consultent le stock, voient « 1 exemplaire restant », le vendent chacun. Résultat : deux clients, un livre. Le problème n’est pas la vitesse d’écriture, mais l’absence de règle partagée au moment de la décision.</p>,<p>Une base de données résout ce type de situation avec des <strong>transactions</strong> : un ensemble d’opérations qui réussit entièrement ou échoue entièrement. Réserver un livre puis décrémenter le stock se fait dans une même unité. Si l’une des étapes échoue, tout est annulé.</p>,<h2 id="tables-lignes-colonnes">Tables, lignes, colonnes</h2>,<p>La base relationnelle, la plus répandue, range les données en <strong>tables</strong>. Une table « clients » contient des lignes (un client par ligne) et des colonnes (nom, e-mail, date d’inscription). Une table « commandes » contient les commandes. Chaque colonne a un type : texte, nombre, date, booléen.</p>,<p>Ce cadre paraît rigide. C’est justement sa force : impossible d’inscrire « hier » dans une colonne de date, ou de créer une commande sans client. La base refuse les données qui ne respectent pas les règles qu’on lui a données.</p>,<h2 id="la-cle-qui-relie-tout">La clé qui relie tout</h2>,<p>Chaque ligne possède souvent un identifiant unique, la <strong>clé primaire</strong>. Une commande référence le client par sa clé : c’est une <strong>clé étrangère</strong>. Ces liens évitent de recopier le nom et l’adresse du client dans chaque commande — une source classique d’incohérences.</p>,<p>Relier les tables permet ensuite de poser des questions : « quels clients ont commandé plus de trois fois ce mois-ci ? », « quel produit revient le plus souvent ? ». C’est le rôle du langage <strong>SQL</strong>, qui reste, des décennies après sa création, l’une des compétences les plus utiles en informatique.</p>,<blockquote>Une base de données ne stocke pas seulement des informations. Elle fait respecter des promesses.</blockquote>,<h2 id="trouver-vite-les-index">Trouver vite : les index</h2>,<p>Chercher dans un million de lignes sans index, c’est feuilleter tout un dictionnaire pour trouver un mot. Un <strong>index</strong> est une structure de tri qui permet d’aller directement à la bonne page. Il accélère les lectures, mais ralentit un peu les écritures et occupe de l’espace : tout est affaire de compromis.</p>,<h2 id="sql-nosql-un-choix-pas-une-religion">SQL, NoSQL : un choix, pas une religion</h2>,<p>Les bases relationnelles excellent quand les données sont structurées et les liens importants. Les bases dites NoSQL (documents, clé-valeur, graphes) proposent d’autres modèles, souvent plus souples ou plus distribués. Elles ne remplacent pas les premières : elles répondent à d’autres contraintes, comme des volumes massifs ou des schémas très changeants.</p>,<p>Une base de données correctement conçue est invisible. Elle ne se remarque que le jour où elle manque : quand un doublon apparaît, qu’une commande disparaît ou qu’un fichier est écrasé. C’est une infrastructure discrète, mais c’est souvent le cœur d’un service.</p>
+          <p>Un tableur suffit pour gérer une liste d’invités. Il devient vite dangereux pour une boutique, une banque ou un hôpital. Pourquoi ? Parce qu’une base de données ne se contente pas d’enregistrer : elle garantit que les informations restent cohérentes, même quand plusieurs personnes écrivent en même temps.</p><h2 id="le-carnet-de-notes-ne-suffit-pas">Le carnet de notes ne suffit pas</h2><p>Imaginez un cahier où chaque vente est notée à la main. Deux vendeurs consultent le stock, voient « 1 exemplaire restant », le vendent chacun. Résultat : deux clients, un livre. Le problème n’est pas la vitesse d’écriture, mais l’absence de règle partagée au moment de la décision.</p><p>Une base de données résout ce type de situation avec des <strong>transactions</strong> : un ensemble d’opérations qui réussit entièrement ou échoue entièrement. Réserver un livre puis décrémenter le stock se fait dans une même unité. Si l’une des étapes échoue, tout est annulé.</p><h2 id="tables-lignes-colonnes">Tables, lignes, colonnes</h2><p>La base relationnelle, la plus répandue, range les données en <strong>tables</strong>. Une table « clients » contient des lignes (un client par ligne) et des colonnes (nom, e-mail, date d’inscription). Une table « commandes » contient les commandes. Chaque colonne a un type : texte, nombre, date, booléen.</p><p>Ce cadre paraît rigide. C’est justement sa force : impossible d’inscrire « hier » dans une colonne de date, ou de créer une commande sans client. La base refuse les données qui ne respectent pas les règles qu’on lui a données.</p><h2 id="la-cle-qui-relie-tout">La clé qui relie tout</h2><p>Chaque ligne possède souvent un identifiant unique, la <strong>clé primaire</strong>. Une commande référence le client par sa clé : c’est une <strong>clé étrangère</strong>. Ces liens évitent de recopier le nom et l’adresse du client dans chaque commande — une source classique d’incohérences.</p><p>Relier les tables permet ensuite de poser des questions : « quels clients ont commandé plus de trois fois ce mois-ci ? », « quel produit revient le plus souvent ? ». C’est le rôle du langage <strong>SQL</strong>, qui reste, des décennies après sa création, l’une des compétences les plus utiles en informatique.</p><blockquote>Une base de données ne stocke pas seulement des informations. Elle fait respecter des promesses.</blockquote><h2 id="trouver-vite-les-index">Trouver vite : les index</h2><p>Chercher dans un million de lignes sans index, c’est feuilleter tout un dictionnaire pour trouver un mot. Un <strong>index</strong> est une structure de tri qui permet d’aller directement à la bonne page. Il accélère les lectures, mais ralentit un peu les écritures et occupe de l’espace : tout est affaire de compromis.</p><h2 id="sql-nosql-un-choix-pas-une-religion">SQL, NoSQL : un choix, pas une religion</h2><p>Les bases relationnelles excellent quand les données sont structurées et les liens importants. Les bases dites NoSQL (documents, clé-valeur, graphes) proposent d’autres modèles, souvent plus souples ou plus distribués. Elles ne remplacent pas les premières : elles répondent à d’autres contraintes, comme des volumes massifs ou des schémas très changeants.</p><p>Une base de données correctement conçue est invisible. Elle ne se remarque que le jour où elle manque : quand un doublon apparaît, qu’une commande disparaît ou qu’un fichier est écrasé. C’est une infrastructure discrète, mais c’est souvent le cœur d’un service.</p>
 
           <div class="takeaways">
             <h2>L’essentiel en 3 points</h2>
@@ -119,6 +127,13 @@
               <li>Une base garantit la cohérence des données grâce à des règles et des transactions.</li><li>Les clés relient les tables et évitent les duplications dangereuses.</li><li>Les index accélèrent les recherches, au prix d’un peu d’espace et d’écriture.</li>
             </ol>
           </div>
+          <section class="article-sources" aria-labelledby="sources-base-de-donnees-classeur">
+            <h2 id="sources-base-de-donnees-classeur">Sources principales</h2>
+            <p>Pour vérifier, approfondir ou prendre en compte l’évolution du sujet.</p>
+            <ul>
+              <li><a href="https://www.postgresql.org/docs/current/tutorial-transactions.html" rel="external">Transactions</a> <span>— Documentation PostgreSQL</span></li><li><a href="https://www.postgresql.org/docs/current/indexes.html" rel="external">Index</a> <span>— Documentation PostgreSQL</span></li>
+            </ul>
+          </section>
 
           <div class="article-foot">
             <div class="tags">
@@ -172,9 +187,9 @@
           </div>
           <div class="article-grid">
             
-    <article class="article-card">
+    <article class="article-card" data-category="Fondamentaux" data-search="Du clic à la page : le voyage de 300 millisecondes Vous tapez une adresse, vous appuyez sur Entrée, la page apparaît. Entre les deux, une chaîne logistique invisible. Fondamentaux Une visite web enchaîne DNS, connexion, requête, réponse, puis rendu. Le cache et la proximité des serveurs réduisent fortement les délais. Alléger les pages améliore à la fois l’expérience et l’empreinte environnementale.">
       <div class="card-media">
-        <img src="assets/images/web.jpg" alt="Mbairassem appuie sur un gros bouton orange devant un chronomètre et des fenêtres empilées." loading="lazy" decoding="async" width="1400" height="933">
+        <img src="assets/images/web.jpg" srcset="assets/images/web-640.webp 640w, assets/images/web-960.webp 960w, assets/images/web-1400.webp 1400w" sizes="(max-width: 620px) 100vw, (max-width: 1080px) 50vw, 33vw" alt="Mbairassem appuie sur un gros bouton orange devant un chronomètre et des fenêtres empilées." width="1400" height="933" loading="lazy" decoding="async">
       </div>
       <div class="card-body">
         <span class="card-cat" style="--cat:#2C5FD6">Fondamentaux</span>
@@ -186,12 +201,12 @@
         </div>
       </div>
     </article>
-    <article class="article-card">
+    <article class="article-card" data-category="Décryptage" data-search="Une API, c’est une prise électrique pour logiciels Derrière chaque paiement en ligne, chaque bulletin météo et chaque réponse de chatbot, il y a une API. Voici ce que c’est, sans jargon. Décryptage Une API est un contrat qui permet à deux logiciels de se parler sans se connaître. Elle standardise l’adresse, le format des données et les règles d’accès. Elle crée de la modularité, mais aussi une dépendance à surveiller.">
       <div class="card-media">
-        <img src="assets/images/api.jpg" alt="Mbairassem, en chemise noire brodée, pose à côté d’une grande prise électrique orange reliée à deux serveurs verts." loading="lazy" decoding="async" width="1400" height="933">
+        <img src="assets/images/api.jpg" srcset="assets/images/api-640.webp 640w, assets/images/api-960.webp 960w, assets/images/api-1400.webp 1400w" sizes="(max-width: 620px) 100vw, (max-width: 1080px) 50vw, 33vw" alt="Mbairassem, en chemise noire brodée, pose à côté d’une grande prise électrique orange reliée à deux serveurs verts." width="1400" height="933" loading="lazy" decoding="async">
       </div>
       <div class="card-body">
-        <span class="card-cat" style="--cat:#E8491D">Décryptage</span>
+        <span class="card-cat" style="--cat:#C53A12">Décryptage</span>
         <h3 class="card-title"><a href="api-prise-electrique.html">Une API, c’est une prise électrique pour logiciels</a></h3>
         <p class="card-dek">Derrière chaque paiement en ligne, chaque bulletin météo et chaque réponse de chatbot, il y a une API. Voici ce que c’est, sans jargon.</p>
         <div class="card-foot">

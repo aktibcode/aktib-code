@@ -7,13 +7,21 @@
   <meta name="description" content="Vous tapez une adresse, vous appuyez sur Entrée, la page apparaît. Entre les deux, une chaîne logistique invisible.">
   <meta name="author" content="Mbairassem">
   <meta name="theme-color" content="#f3efe3">
+  <link rel="canonical" href="https://aktibcode.com/clic-page-300ms.html">
   <meta property="og:title" content="Du clic à la page : le voyage de 300 millisecondes — AktibCode">
   <meta property="og:description" content="Vous tapez une adresse, vous appuyez sur Entrée, la page apparaît. Entre les deux, une chaîne logistique invisible.">
   <meta property="og:type" content="article">
-  <meta property="og:image" content="assets/images/web.jpg">
+  <meta property="og:url" content="https://aktibcode.com/clic-page-300ms.html">
+  <meta property="og:site_name" content="AktibCode">
+  <meta property="og:image" content="https://aktibcode.com/assets/images/web.jpg">
+  <meta property="og:image:alt" content="Mbairassem appuie sur un gros bouton orange devant un chronomètre et des fenêtres empilées.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Du clic à la page : le voyage de 300 millisecondes — AktibCode">
+  <meta name="twitter:description" content="Vous tapez une adresse, vous appuyez sur Entrée, la page apparaît. Entre les deux, une chaîne logistique invisible.">
+  <meta name="twitter:image" content="https://aktibcode.com/assets/images/web.jpg">
   <meta property="article:published_time" content="2026-10-09">
   <meta property="article:section" content="Fondamentaux">
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"Du clic à la page : le voyage de 300 millisecondes","description":"Vous tapez une adresse, vous appuyez sur Entrée, la page apparaît. Entre les deux, une chaîne logistique invisible.","image":"assets/images/web.jpg","datePublished":"2026-10-09","dateModified":"2026-10-09","inLanguage":"fr","articleSection":"Fondamentaux","author":{"@type":"Person","name":"Mbairassem","url":"a-propos.html"},"publisher":{"@type":"Organization","name":"AktibCode"}}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"Du clic à la page : le voyage de 300 millisecondes","description":"Vous tapez une adresse, vous appuyez sur Entrée, la page apparaît. Entre les deux, une chaîne logistique invisible.","image":"https://aktibcode.com/assets/images/web.jpg","datePublished":"2026-10-09","dateModified":"2026-10-09","inLanguage":"fr","articleSection":"Fondamentaux","mainEntityOfPage":"https://aktibcode.com/clic-page-300ms.html","citation":["https://developer.mozilla.org/en-US/docs/Learn_web_development/Getting_started/Web_standards/How_the_web_works","https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/Overview","https://web.dev/learn/performance/fast"],"author":{"@type":"Person","name":"Mbairassem","url":"https://aktibcode.com/a-propos.html"},"publisher":{"@type":"Organization","name":"AktibCode","url":"https://aktibcode.com","logo":"https://aktibcode.com/assets/favicon.svg"}}</script>
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <script>
     (function () {
@@ -42,7 +50,7 @@
         <span class="logo-word">Aktib<em>Code</em></span>
       </a>
       <nav class="site-nav" aria-label="Navigation principale">
-        <a href="articles.html" aria-current="page">Articles</a>
+        <a href="articles.html">Articles</a>
         <a href="lexique.html">Lexique</a>
         <a href="a-propos.html">À propos</a>
       </nav>
@@ -90,7 +98,7 @@
 
       <div class="container">
         <figure class="article-cover">
-          <img src="assets/images/web.jpg" alt="Mbairassem appuie sur un gros bouton orange devant un chronomètre et des fenêtres empilées." width="1400" height="933">
+          <img src="assets/images/web.jpg" srcset="assets/images/web-640.webp 640w, assets/images/web-960.webp 960w, assets/images/web-1400.webp 1400w" sizes="(max-width: 1240px) 100vw, 1240px" alt="Mbairassem appuie sur un gros bouton orange devant un chronomètre et des fenêtres empilées." width="1400" height="933" loading="eager" decoding="async" fetchpriority="high">
           <figcaption>
             <span>Fondamentaux · 09 oct. 2026</span>
             <span>Portrait : Mbairassem</span>
@@ -111,11 +119,11 @@
         </aside>
 
         <div class="prose">
-          <p>Un clic, et la page est là. Cette immédiateté cache une séquence précise : traduire un nom en adresse, ouvrir une connexion, demander un document, le fabriquer, le mettre en page. Comprendre ce trajet aide à diagnostiquer les lenteurs — et à mieux comprendre le web.</p>,<h2 id="le-gps-le-dns">Le GPS : le DNS</h2>,<p>Vous tapez « aktibcode.com ». Votre ordinateur ne sait pas où se trouve ce serveur. Il interroge donc le <strong>DNS</strong>, l’annuaire d’Internet, qui traduit le nom en adresse IP — une suite de chiffres qui identifie une machine. C’est le bottin du web, distribué et mis en cache un peu partout pour répondre vite.</p>,<p>Si l’entrée est en cache, la réponse arrive en quelques millisecondes. Sinon, la requête remonte une chaîne de serveurs DNS jusqu’à trouver l’adresse. C’est souvent la première source de lenteur perçue, surtout sur un réseau mobile instable.</p>,<h2 id="la-prise-de-contact">La prise de contact</h2>,<p>Une fois l’adresse connue, votre navigateur ouvre une connexion avec le serveur (TCP), puis négocie le chiffrement (TLS) si l’adresse est en HTTPS. Ces étapes ajoutent des allers-retours. Sur une connexion lente, chaque aller-retour coûte cher ; d’où l’importance de les limiter et de les réutiliser.</p>,<h2 id="la-commande-http">La commande : HTTP</h2>,<p>Le navigateur envoie ensuite une requête HTTP : « donne-moi cette page », avec des en-têtes qui précisent la langue, le type de contenu accepté, les cookies, etc. Le serveur répond avec un code de statut, des en-têtes et un corps de page.</p>,<pre><span class="code-lang">http</span><code>GET /articles HTTP/2
+          <p>Un clic, et la page est là. Cette immédiateté cache une séquence précise : traduire un nom en adresse, ouvrir une connexion, demander un document, le fabriquer, le mettre en page. Comprendre ce trajet aide à diagnostiquer les lenteurs — et à mieux comprendre le web.</p><h2 id="le-gps-le-dns">Le GPS : le DNS</h2><p>Vous tapez « aktibcode.com ». Votre ordinateur ne sait pas où se trouve ce serveur. Il interroge donc le <strong>DNS</strong>, l’annuaire d’Internet, qui traduit le nom en adresse IP — une suite de chiffres qui identifie une machine. C’est le bottin du web, distribué et mis en cache un peu partout pour répondre vite.</p><p>Si l’entrée est en cache, la réponse arrive en quelques millisecondes. Sinon, la requête remonte une chaîne de serveurs DNS jusqu’à trouver l’adresse. C’est souvent la première source de lenteur perçue, surtout sur un réseau mobile instable.</p><h2 id="la-prise-de-contact">La prise de contact</h2><p>Une fois l’adresse connue, votre navigateur ouvre une connexion avec le serveur (TCP), puis négocie le chiffrement (TLS) si l’adresse est en HTTPS. Ces étapes ajoutent des allers-retours. Sur une connexion lente, chaque aller-retour coûte cher ; d’où l’importance de les limiter et de les réutiliser.</p><h2 id="la-commande-http">La commande : HTTP</h2><p>Le navigateur envoie ensuite une requête HTTP : « donne-moi cette page », avec des en-têtes qui précisent la langue, le type de contenu accepté, les cookies, etc. Le serveur répond avec un code de statut, des en-têtes et un corps de page.</p><pre><span class="code-lang">http</span><code>GET /articles HTTP/2
 Host: aktibcode.com
 
 → 200 OK
-Content-Type: text/html; charset=utf-8</code></pre>,<h2 id="la-cuisine-du-serveur">La cuisine du serveur</h2>,<p>Derrière, le serveur (ou une fonction, une API) prépare la réponse : il interroge une base de données, applique des règles, assemble un gabarit HTML. Parfois la page est déjà prête et stockée en <strong>cache</strong> ; c’est souvent ce qui fait la différence entre 50 et 500 millisecondes.</p>,<p>La réponse traverse ensuite des réseaux, des opérateurs et parfois un CDN, un réseau de serveurs proches de vous qui garde des copies des fichiers. Plus la copie est proche, plus le voyage est court.</p>,<h2 id="le-montage-dans-le-navigateur">Le montage dans le navigateur</h2>,<p>Le navigateur lit le HTML, découvre des styles (CSS) et des scripts (JavaScript), télécharge les images et les polices, construit l’arbre de la page, calcule la mise en page, puis peint les pixels. Chaque ressource manquante est une nouvelle requête. Une image lourde ou un script bloquant peut retarder l’affichage de toute la page.</p>,<blockquote>Chaque page web est le résultat d’une négociation entre des dizaines de machines qui ne se sont jamais vues.</blockquote>,<h2 id="pourquoi-tout-peut-ralentir">Pourquoi tout peut ralentir</h2>,<ul><li>Le DNS ou la connexion mettent trop de temps à répondre.</li><li>Le serveur fabrique la page à chaque visite, sans cache.</li><li>Les images sont énormes et les scripts bloquent le rendu.</li><li>Le réseau mobile est mauvais, ou le Wi-Fi saturé.</li><li>Le navigateur est ralenti par des extensions ou un appareil ancien.</li></ul>,<p>La vitesse n’est pas qu’une question de confort : chaque seconde d’attente fait perdre des visiteurs. Mais elle est aussi une question de sobriété : une page plus légère consomme moins de données, d’énergie et de matériel. Le meilleur octet reste celui qu’on n’envoie pas.</p>
+Content-Type: text/html; charset=utf-8</code></pre><h2 id="la-cuisine-du-serveur">La cuisine du serveur</h2><p>Derrière, le serveur (ou une fonction, une API) prépare la réponse : il interroge une base de données, applique des règles, assemble un gabarit HTML. Parfois la page est déjà prête et stockée en <strong>cache</strong> ; c’est souvent ce qui fait la différence entre 50 et 500 millisecondes.</p><p>La réponse traverse ensuite des réseaux, des opérateurs et parfois un CDN, un réseau de serveurs proches de vous qui garde des copies des fichiers. Plus la copie est proche, plus le voyage est court.</p><h2 id="le-montage-dans-le-navigateur">Le montage dans le navigateur</h2><p>Le navigateur lit le HTML, découvre des styles (CSS) et des scripts (JavaScript), télécharge les images et les polices, construit l’arbre de la page, calcule la mise en page, puis peint les pixels. Chaque ressource manquante est une nouvelle requête. Une image lourde ou un script bloquant peut retarder l’affichage de toute la page.</p><blockquote>Chaque page web est le résultat d’une négociation entre des dizaines de machines qui ne se sont jamais vues.</blockquote><h2 id="pourquoi-tout-peut-ralentir">Pourquoi tout peut ralentir</h2><ul><li>Le DNS ou la connexion mettent trop de temps à répondre.</li><li>Le serveur fabrique la page à chaque visite, sans cache.</li><li>Les images sont énormes et les scripts bloquent le rendu.</li><li>Le réseau mobile est mauvais, ou le Wi-Fi saturé.</li><li>Le navigateur est ralenti par des extensions ou un appareil ancien.</li></ul><p>La vitesse n’est pas qu’une question de confort : chaque seconde d’attente fait perdre des visiteurs. Mais elle est aussi une question de sobriété : une page plus légère consomme moins de données, d’énergie et de matériel. Le meilleur octet reste celui qu’on n’envoie pas.</p>
 
           <div class="takeaways">
             <h2>L’essentiel en 3 points</h2>
@@ -123,6 +131,13 @@ Content-Type: text/html; charset=utf-8</code></pre>,<h2 id="la-cuisine-du-serveu
               <li>Une visite web enchaîne DNS, connexion, requête, réponse, puis rendu.</li><li>Le cache et la proximité des serveurs réduisent fortement les délais.</li><li>Alléger les pages améliore à la fois l’expérience et l’empreinte environnementale.</li>
             </ol>
           </div>
+          <section class="article-sources" aria-labelledby="sources-clic-page-300ms">
+            <h2 id="sources-clic-page-300ms">Sources principales</h2>
+            <p>Pour vérifier, approfondir ou prendre en compte l’évolution du sujet.</p>
+            <ul>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Learn_web_development/Getting_started/Web_standards/How_the_web_works" rel="external">Comment fonctionne le Web</a> <span>— MDN Web Docs</span></li><li><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/Overview" rel="external">Vue d’ensemble du protocole HTTP</a> <span>— MDN Web Docs</span></li><li><a href="https://web.dev/learn/performance/fast" rel="external">Fast load times</a> <span>— web.dev</span></li>
+            </ul>
+          </section>
 
           <div class="article-foot">
             <div class="tags">
@@ -161,7 +176,7 @@ Content-Type: text/html; charset=utf-8</code></pre>,<h2 id="la-cuisine-du-serveu
         </a>
         <a href="open-source-licence.html">
           <span class="nav-label">Plus ancien →</span>
-          <span class="nav-title">Open source : le code qui appartient à tout le monde</span>
+          <span class="nav-title">Open source : le code que vous pouvez utiliser, étudier et partager</span>
         </a>
       </nav>
 
@@ -176,9 +191,9 @@ Content-Type: text/html; charset=utf-8</code></pre>,<h2 id="la-cuisine-du-serveu
           </div>
           <div class="article-grid">
             
-    <article class="article-card">
+    <article class="article-card" data-category="Fondamentaux" data-search="Une base de données, c’est un classeur avec des règles Sans base de données, votre boutique en ligne vendrait le même livre à deux personnes. Ou perdrait la moitié de ses commandes au redémarrage. Fondamentaux Une base garantit la cohérence des données grâce à des règles et des transactions. Les clés relient les tables et évitent les duplications dangereuses. Les index accélèrent les recherches, au prix d’un peu d’espace et d’écriture.">
       <div class="card-media">
-        <img src="assets/images/base-de-donnees.jpg" alt="Mbairassem ouvre un tiroir de classeur rempli de fiches orange dans une salle d’archives." loading="lazy" decoding="async" width="1400" height="933">
+        <img src="assets/images/base-de-donnees.jpg" srcset="assets/images/base-de-donnees-640.webp 640w, assets/images/base-de-donnees-960.webp 960w, assets/images/base-de-donnees-1400.webp 1400w" sizes="(max-width: 620px) 100vw, (max-width: 1080px) 50vw, 33vw" alt="Mbairassem ouvre un tiroir de classeur rempli de fiches orange dans une salle d’archives." width="1400" height="933" loading="lazy" decoding="async">
       </div>
       <div class="card-body">
         <span class="card-cat" style="--cat:#2C5FD6">Fondamentaux</span>
@@ -190,12 +205,12 @@ Content-Type: text/html; charset=utf-8</code></pre>,<h2 id="la-cuisine-du-serveu
         </div>
       </div>
     </article>
-    <article class="article-card">
+    <article class="article-card" data-category="Décryptage" data-search="Une API, c’est une prise électrique pour logiciels Derrière chaque paiement en ligne, chaque bulletin météo et chaque réponse de chatbot, il y a une API. Voici ce que c’est, sans jargon. Décryptage Une API est un contrat qui permet à deux logiciels de se parler sans se connaître. Elle standardise l’adresse, le format des données et les règles d’accès. Elle crée de la modularité, mais aussi une dépendance à surveiller.">
       <div class="card-media">
-        <img src="assets/images/api.jpg" alt="Mbairassem, en chemise noire brodée, pose à côté d’une grande prise électrique orange reliée à deux serveurs verts." loading="lazy" decoding="async" width="1400" height="933">
+        <img src="assets/images/api.jpg" srcset="assets/images/api-640.webp 640w, assets/images/api-960.webp 960w, assets/images/api-1400.webp 1400w" sizes="(max-width: 620px) 100vw, (max-width: 1080px) 50vw, 33vw" alt="Mbairassem, en chemise noire brodée, pose à côté d’une grande prise électrique orange reliée à deux serveurs verts." width="1400" height="933" loading="lazy" decoding="async">
       </div>
       <div class="card-body">
-        <span class="card-cat" style="--cat:#E8491D">Décryptage</span>
+        <span class="card-cat" style="--cat:#C53A12">Décryptage</span>
         <h3 class="card-title"><a href="api-prise-electrique.html">Une API, c’est une prise électrique pour logiciels</a></h3>
         <p class="card-dek">Derrière chaque paiement en ligne, chaque bulletin météo et chaque réponse de chatbot, il y a une API. Voici ce que c’est, sans jargon.</p>
         <div class="card-foot">

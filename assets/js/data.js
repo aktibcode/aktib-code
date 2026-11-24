@@ -10,11 +10,12 @@ const SITE = {
   description:
     "AktibCode décrypte la tech pour celles et ceux qui n’ont pas fait d’informatique. Des articles clairs, honnêtes et sans condescendance.",
   email: "mbairassem@aktibcode.com",
+  url: "https://aktibcode.com",
   year: 2026,
 };
 
 const CATEGORIES = {
-  "Décryptage": { color: "#E8491D" },
+  "Décryptage": { color: "#C53A12" },
   "Intelligence artificielle": { color: "#6A4BFF", short: "IA" },
   "Sécurité": { color: "#1F6B54" },
   "Fondamentaux": { color: "#2C5FD6" },
@@ -31,6 +32,10 @@ const ARTICLES = [
     author: "Mbairassem",
     cover: "assets/images/api.jpg",
     coverAlt: "Mbairassem, en chemise noire brodée, pose à côté d’une grande prise électrique orange reliée à deux serveurs verts.",
+    sources: [
+      { title: "Introduction aux API côté client", publisher: "MDN Web Docs", url: "https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Client-side_APIs/Introduction" },
+      { title: "Vue d’ensemble du protocole HTTP", publisher: "MDN Web Docs", url: "https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/Overview" }
+    ],
     featured: true,
     pullQuote: "Une API ne vous donne pas la centrale électrique. Elle vous donne une prise aux normes, et le mode d’emploi.",
     blocks: [
@@ -46,7 +51,7 @@ const ARTICLES = [
       { type: "h2", text: "Requête, réponse : le dialogue en pratique" },
       { type: "p", text: "La plupart des API du web suivent le même rituel. Le logiciel client envoie une <strong>requête</strong> à une adresse, avec une méthode (lire, créer, modifier, supprimer), éventuellement des paramètres et une clé d’identification. Le service répond avec un code (200 si tout va bien, 404 si la ressource n’existe pas) et des données." },
       { type: "code", lang: "http", code: "GET /v1/meteo?ville=Ndjamena\nAuthorization: Bearer CLE_SECRETE\n\n→ 200 OK\n{ \"temperature\": 34, \"ciel\": \"dégagé\" }" },
-      { type: "p", text: "Ce aller-retour se produit des milliards de fois par jour : quand votre application bancaire vérifie un solde, quand un site affiche une carte, quand un assistant génère une réponse. Vous ne voyez que le résultat. La plomberie, elle, est faite d’API." },
+      { type: "p", text: "Cet aller-retour se produit des milliards de fois par jour : quand votre application bancaire vérifie un solde, quand un site affiche une carte, quand un assistant génère une réponse. Vous ne voyez que le résultat. La plomberie, elle, est faite d’API." },
       { type: "h2", text: "Un contrat, pas une télécommande magique" },
       { type: "p", text: "Une API n’ouvre pas un accès illimité. Elle expose volontairement une partie d’un système, avec des limites : un nombre de requêtes par minute, un périmètre de données, une clé révocable. C’est une <strong>porte avec un videur</strong>, pas un trou dans le mur." },
       { type: "p", text: "C’est aussi une dépendance. Si le fournisseur change son contrat, augmente ses prix ou ferme le service, votre produit peut s’arrêter du jour au lendemain. Les équipes sérieuses surveillent donc trois choses : la stabilité de l’API, son prix à l’échelle, et ce qui se passe si elle disparaît." },
@@ -67,19 +72,23 @@ const ARTICLES = [
   {
     slug: "ia-perroquet-statistique",
     title: "L’IA générative est un perroquet statistique",
-    dek: "Elle ne comprend pas ce qu’elle écrit. Elle calcule ce qui a le plus de chances de venir après. Et c’est déjà une petite révolution.",
+    dek: "Comprendre une IA générative commence par un mécanisme : elle calcule ce qui a le plus de chances de venir après. Et c’est déjà une petite révolution.",
     category: "Intelligence artificielle",
     date: "2026-11-12",
     author: "Mbairassem",
     cover: "assets/images/ia.jpg",
     coverAlt: "Mbairassem tend un jeton orange vers un perroquet mécanique en circuits imprimés, entouré de graphiques.",
-    pullQuote: "Un modèle de langage ne cherche pas la vérité. Il cherche la suite la plus probable.",
+    sources: [
+      { title: "AI Risk Management Framework", publisher: "NIST", url: "https://www.nist.gov/itl/ai-risk-management-framework" },
+      { title: "Attention Is All You Need", publisher: "arXiv", url: "https://arxiv.org/abs/1706.03762" }
+    ],
+    pullQuote: "Un modèle de langage ne vérifie pas les faits : il cherche la suite la plus probable.",
     blocks: [
-      { type: "p", text: "Demandez à un modèle de langage de vous expliquer la photosynthèse, d’écrire un poème sur les réseaux ou de corriger un e-mail. La réponse arrive, fluide, souvent convaincante. D’où vient-elle ? Pas d’une base de données de réponses toute faites, ni d’une compréhension humaine. D’un calcul de probabilités, répété mot après mot." },
+      { type: "p", text: "Demandez à un modèle de langage de vous expliquer la photosynthèse, d’écrire un poème sur les réseaux ou de corriger un e-mail. La réponse arrive, fluide, souvent convaincante. Pour un modèle de langage, elle vient d’un calcul de probabilités, répété mot après mot, et non d’une compréhension comparable à celle d’un humain." },
       { type: "h2", text: "Un moteur à deviner la suite" },
-      { type: "p", text: "Un modèle de langage est entraîné sur d’immenses quantités de textes. Il apprend des régularités : quels mots apparaissent souvent ensemble, dans quels contextes, avec quelles tournures. On pourrait le décrire comme un <strong>perroquet statistique</strong> : il a une mémoire prodigieuse des formes du langage, mais aucune expérience du monde." },
+      { type: "p", text: "Un modèle de langage est entraîné sur d’immenses quantités de textes. Il apprend des régularités : quels mots apparaissent souvent ensemble, dans quels contextes, avec quelles tournures. On pourrait le décrire comme un <strong>perroquet statistique</strong> : il a une mémoire prodigieuse des formes du langage, mais pas d’expérience vécue du monde." },
       { type: "p", text: "Quand il écrit, il découpe votre demande en petites unités (des <em>tokens</em>) et estime, pour chacune, la suite la plus plausible. Il choisit un token, l’ajoute au texte, recommence. Cette mécanique explique beaucoup de ses forces — et de ses failles." },
-      { type: "quote", text: "Un modèle de langage ne cherche pas la vérité. Il cherche la suite la plus probable." },
+      { type: "quote", text: "Un modèle de langage ne vérifie pas les faits : il cherche la suite la plus probable." },
       { type: "h2", text: "Pourquoi elle invente parfois" },
       { type: "p", text: "On appelle <strong>hallucination</strong> le fait d’affirmer avec aplomb une chose fausse : une référence inexistante, une date inventée, une loi qui n’a jamais existé. Ce n’est pas un bug isolé, mais une conséquence de la méthode. Le modèle ne vérifie pas les faits ; il produit une suite vraisemblable. Et une source inventée peut être statistiquement très crédible." },
       { type: "p", text: "C’est pourquoi les outils sérieux ajoutent des garde-fous : recherche dans des documents fournis, citation des sources, calculs exécutés par un programme, relecture humaine. L’IA ne remplace pas la vérification. Elle déplace le travail vers elle." },
@@ -100,7 +109,7 @@ const ARTICLES = [
       { type: "p", text: "L’IA générative n’est ni magique ni stupide. C’est une technologie de langage, puissante et faillible. La bonne question n’est pas « a-t-elle raison ? », mais « comment vérifier, et à quelle étape ? »." }
     ],
     takeaways: [
-      "Un modèle de langage prédit la suite probable d’un texte, il ne consulte pas une vérité.",
+      "Un modèle de langage produit une suite probable sans vérifier les faits.",
       "Les hallucinations sont inhérentes à la méthode : la vérification reste indispensable.",
       "Ses bons usages reposent sur des sources fiables et un regard humain."
     ]
@@ -114,6 +123,10 @@ const ARTICLES = [
     author: "Mbairassem",
     cover: "assets/images/https.jpg",
     coverAlt: "Mbairassem devant une enveloppe scellée, un grand cadenas vert et une clé orange.",
+    sources: [
+      { title: "HTTPS", publisher: "MDN Web Docs", url: "https://developer.mozilla.org/en-US/docs/Glossary/HTTPS" },
+      { title: "TLS", publisher: "MDN Web Docs", url: "https://developer.mozilla.org/en-US/docs/Glossary/TLS" }
+    ],
     pullQuote: "HTTPS protège le trajet, pas l’intention. Un site de phishing peut très bien avoir un cadenas.",
     blocks: [
       { type: "p", text: "Quand vous saisissez un mot de passe, le petit cadenas à côté de l’adresse vous rassure. Mais que garantit-il exactement ? Pour le comprendre, il faut regarder ce qui circule entre votre navigateur et le serveur — et ce qui pourrait l’intercepter." },
@@ -121,7 +134,7 @@ const ARTICLES = [
       { type: "p", text: "Le web historique utilise HTTP, un protocole simple : votre navigateur envoie une demande, le serveur renvoie une réponse. Le problème, c’est que cette conversation voyage en clair. Sur un Wi-Fi public, un opérateur ou un routeur mal configuré peut lire vos requêtes, vos cookies de session, vos formulaires. C’est comme envoyer une carte postale : tout le monde sur le trajet peut la lire." },
       { type: "p", text: "HTTPS ajoute une couche de chiffrement, TLS, entre votre navigateur et le serveur. Le contenu devient illisible pour les intermédiaires. Mais HTTPS ne fait pas que chiffrer : il authentifie aussi le serveur et garantit que le message n’a pas été modifié en route." },
       { type: "h2", text: "TLS, l’enveloppe scellée" },
-      { type: "p", text: "L’image de l’enveloppe scellée est utile, à condition d’ajouter une étape : avant de s’écrire, les deux parties doivent se mettre d’accord sur une clé secrète, sans que personne ne l’entende. C’est le fameux <strong>échange de clés</strong>. La cryptographie asymétrique permet de transmettre cette clé de façon sûre ; ensuite, la conversation utilise un chiffrement symétrique, plus rapide." },
+      { type: "p", text: "L’image de l’enveloppe scellée est utile, à condition d’ajouter une étape : avant de s’écrire, les deux parties doivent se mettre d’accord sur une clé secrète, sans que personne ne l’entende. C’est le fameux <strong>échange de clés</strong>. La cryptographie asymétrique permet aux deux parties d’établir cette clé sans la transmettre en clair ; ensuite, la conversation utilise un chiffrement symétrique, plus rapide." },
       { type: "p", text: "Concrètement, en quelques allers-retours de quelques millisecondes, le navigateur et le serveur se présentent, négocient une version de TLS, vérifient l’identité du serveur, puis établissent une clé de session. Tout le reste — la page, les formulaires, les cookies — voyage dans un tunnel chiffré." },
       { type: "h2", text: "Le certificat, la carte d’identité" },
       { type: "p", text: "Comment savoir que le serveur en face est bien celui de votre banque, et pas un imposteur ? Grâce à un <strong>certificat</strong>, délivré par une autorité de certification reconnue. Le certificat associe un nom de domaine à une clé publique, et l’autorité garantit avoir vérifié que le demandeur contrôle bien ce domaine." },
@@ -154,6 +167,10 @@ const ARTICLES = [
     author: "Mbairassem",
     cover: "assets/images/cloud.jpg",
     coverAlt: "Mbairassem dans une allée de serveurs verts, sous un nuage de béton relié par des câbles.",
+    sources: [
+      { title: "The NIST Definition of Cloud Computing", publisher: "NIST", url: "https://csrc.nist.gov/pubs/sp/800/145/final" },
+      { title: "Cloud computing et virtualisation", publisher: "NIST", url: "https://csrc.nist.gov/topics/technologies/cloud-computing-and-virtualization" }
+    ],
     pullQuote: "Le cloud, c’est l’informatique de quelqu’un d’autre, facturée à l’usage, derrière un contrat.",
     blocks: [
       { type: "p", text: "Vos photos, vos e-mails, les vidéos que vous regardez : une partie de votre vie numérique vit « dans le cloud ». L’expression suggère quelque chose de léger, d’aérien, presque immatériel. La réalité est plus lourde : des bâtiments, des climatiseurs, des câbles sous-marins et des groupes électrogènes." },
@@ -173,7 +190,7 @@ const ARTICLES = [
       { type: "p", text: "L’intérêt est réel : pas d’achat de matériel, une capacité qui s’adapte à la demande, des sauvegardes et une sécurité de base souvent incluses. Pour une petite structure, c’est parfois plus sûr qu’un serveur mal configuré dans un placard." },
       { type: "h2", text: "Les coûts cachés" },
       { type: "p", text: "La facture cloud est élastique, dans les deux sens. Les tarifs à l’usage peuvent sembler minuscules, puis devenir vertigineux quand le trafic explose ou qu’une erreur fait tourner des machines inutiles. Les sorties de données (egress) sont souvent facturées, parfois cher. Et chaque service managé ajoute sa propre ligne." },
-      { type: "p", text: "Il y a aussi des coûts moins visibles : la complexité des architectures, la dépendance à un fournisseur, la difficulté à changer d’hébergeur, et la perte de compétences internes. Une équipe qui ne sait plus administrer un serveur devient captivante pour son fournisseur." },
+      { type: "p", text: "Il y a aussi des coûts moins visibles : la complexité des architectures, la dépendance à un fournisseur, la difficulté à changer d’hébergeur, et la perte de compétences internes. Une équipe qui ne sait plus administrer un serveur devient dépendante de son fournisseur." },
       { type: "h2", text: "Souveraineté et dépendance" },
       { type: "p", text: "Où sont stockées les données ? Qui peut y accéder ? Quel droit s’applique ? Ces questions comptent pour une administration, une banque, un hôpital. Le cloud dit « mondial », mais les lois, elles, restent territoriales. Choisir un fournisseur, c’est aussi choisir un régime juridique et une chaîne de sous-traitants." },
       { type: "note", title: "À vérifier avant de signer", text: "Localisation des données, conditions de sortie, engagement de disponibilité, coût des transferts, procédure en cas de panne, et ce qui se passe si vous voulez partir." },
@@ -194,6 +211,10 @@ const ARTICLES = [
     author: "Mbairassem",
     cover: "assets/images/base-de-donnees.jpg",
     coverAlt: "Mbairassem ouvre un tiroir de classeur rempli de fiches orange dans une salle d’archives.",
+    sources: [
+      { title: "Transactions", publisher: "Documentation PostgreSQL", url: "https://www.postgresql.org/docs/current/tutorial-transactions.html" },
+      { title: "Index", publisher: "Documentation PostgreSQL", url: "https://www.postgresql.org/docs/current/indexes.html" }
+    ],
     pullQuote: "Une base de données ne stocke pas seulement des informations. Elle fait respecter des promesses.",
     blocks: [
       { type: "p", text: "Un tableur suffit pour gérer une liste d’invités. Il devient vite dangereux pour une boutique, une banque ou un hôpital. Pourquoi ? Parce qu’une base de données ne se contente pas d’enregistrer : elle garantit que les informations restent cohérentes, même quand plusieurs personnes écrivent en même temps." },
@@ -228,6 +249,11 @@ const ARTICLES = [
     author: "Mbairassem",
     cover: "assets/images/web.jpg",
     coverAlt: "Mbairassem appuie sur un gros bouton orange devant un chronomètre et des fenêtres empilées.",
+    sources: [
+      { title: "Comment fonctionne le Web", publisher: "MDN Web Docs", url: "https://developer.mozilla.org/en-US/docs/Learn_web_development/Getting_started/Web_standards/How_the_web_works" },
+      { title: "Vue d’ensemble du protocole HTTP", publisher: "MDN Web Docs", url: "https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/Overview" },
+      { title: "Fast load times", publisher: "web.dev", url: "https://web.dev/learn/performance/fast" }
+    ],
     pullQuote: "Chaque page web est le résultat d’une négociation entre des dizaines de machines qui ne se sont jamais vues.",
     blocks: [
       { type: "p", text: "Un clic, et la page est là. Cette immédiateté cache une séquence précise : traduire un nom en adresse, ouvrir une connexion, demander un document, le fabriquer, le mettre en page. Comprendre ce trajet aide à diagnostiquer les lenteurs — et à mieux comprendre le web." },
@@ -263,13 +289,18 @@ const ARTICLES = [
   },
   {
     slug: "open-source-licence",
-    title: "Open source : le code qui appartient à tout le monde",
+    title: "Open source : le code que vous pouvez utiliser, étudier et partager",
     dek: "Ce n’est pas « gratuit », ce n’est pas un modèle économique, et ce n’est pas toujours un cadeau désintéressé. C’est d’abord une licence.",
     category: "Culture",
     date: "2026-09-30",
     author: "Mbairassem",
     cover: "assets/images/open-source.jpg",
     coverAlt: "Mbairassem dans un atelier, un document scellé à la main, entouré d’outils et de plans.",
+    sources: [
+      { title: "The Open Source Definition", publisher: "Open Source Initiative", url: "https://opensource.org/osd" },
+      { title: "Choisir une licence de logiciel libre", publisher: "Choose a License", url: "https://choosealicense.com/licenses/" },
+      { title: "Qu’est-ce qu’un logiciel libre ?", publisher: "Projet GNU", url: "https://www.gnu.org/philosophy/free-sw.fr.html" }
+    ],
     pullQuote: "Open source ne veut pas dire gratuit. Cela veut dire : le code source est disponible, et vous avez le droit de l’utiliser, de l’étudier, de le modifier et de le partager.",
     blocks: [
       { type: "p", text: "Linux, Firefox, VLC, Blender, une grande partie des serveurs du web : l’open source est partout. Pourtant, l’expression reste floue pour beaucoup. On la confond avec « gratuit », avec « communautaire », ou avec une idéologie. La définition est plus précise, et plus intéressante." },
@@ -311,10 +342,14 @@ const ARTICLES = [
     author: "Mbairassem",
     cover: "assets/images/smartphone.jpg",
     coverAlt: "Mbairassem tient un smartphone orange surchauffé, entouré de câbles emmêlés, d’engrenages et d’un escargot.",
+    sources: [
+      { title: "Directive sur la réparation des biens", publisher: "Commission européenne", url: "https://commission.europa.eu/law/law-topic/consumer-protection-law/directive-repair-goods_en" },
+      { title: "Règlement sur les produits durables", publisher: "Commission européenne", url: "https://environment.ec.europa.eu/strategy/circular-economy/ecodesign-sustainable-products-regulation_en" }
+    ],
     pullQuote: "Un téléphone n’est pas un objet figé : c’est un équilibre instable entre du matériel qui vieillit et du logiciel qui grossit.",
     blocks: [
       { type: "p", text: "Le scénario est familier. Le premier jour, tout est fluide. Deux ans plus tard, les applications mettent dix secondes à s’ouvrir, la batterie fond et l’appareil chauffe. On parle d’obsolescence programmée — parfois à raison, souvent à tort. Le mécanisme réel est plus nuancé, et plus intéressant." },
-      { type: "h2", text: "La batterie perd sa forme" },
+      { type: "h2", text: "La batterie perd de sa capacité" },
       { type: "p", text: "Une batterie lithium-ion s’use chimiquement. Sa capacité diminue, sa résistance interne augmente. Conséquence : elle fournit moins d’énergie, chauffe davantage, et peut ne plus soutenir les pics de puissance. Les systèmes d’exploitation réduisent alors les performances pour éviter les extinctions brutales — une décision qui ressemble à un ralentissement volontaire, mais qui vise d’abord la stabilité." },
       { type: "p", text: "Remplacer la batterie peut redonner un second souffle à un téléphone. Encore faut-il que l’appareil soit conçu pour être réparé, ce qui n’a rien d’évident dans un marché où la colle et le verre dominent." },
       { type: "h2", text: "Le logiciel grossit, le matériel reste" },
@@ -322,7 +357,7 @@ const ARTICLES = [
       { type: "p", text: "Les mises à jour de sécurité restent indispensables. Mais les mises à jour majeures peuvent aussi alourdir un appareil ancien. C’est un arbitrage délicat pour les fabricants : maintenir la sécurité sans promettre une fluidité impossible." },
       { type: "quote", text: "Un téléphone n’est pas un objet figé : c’est un équilibre instable entre du matériel qui vieillit et du logiciel qui grossit." },
       { type: "h2", text: "Le stockage plein ralentit tout" },
-      { type: "p", text: "Un téléphone saturé à 95 % n’a plus de place pour les fichiers temporaires, les caches, les mises à jour. La mémoire flash elle-même voit ses performances chuter quand elle est presque pleine. Supprimer des vidéos, vider les caches, désinstaller les applications inutilisées : ces gestes simples règlent parfois plus de lenteurs qu’un redémarrage." },
+      { type: "p", text: "Un téléphone presque saturé n’a plus assez de place pour les fichiers temporaires, les caches et les mises à jour. La mémoire flash elle-même voit ses performances chuter quand elle est presque pleine. Supprimer des vidéos, vider les caches, désinstaller les applications inutilisées : ces gestes simples règlent parfois plus de lenteurs qu’un redémarrage." },
       { type: "h2", text: "La chaleur, l’ennemi discret" },
       { type: "p", text: "Un processeur qui chauffe réduit sa fréquence pour se protéger. En été, en charge, ou dans une coque épaisse, votre téléphone peut donc ralentir sans être « vieux ». La chaleur accélère aussi le vieillissement de la batterie, créant un cercle vicieux." },
       { type: "h2", text: "Obsolescence : programmée ou négligée ?" },

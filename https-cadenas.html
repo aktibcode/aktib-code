@@ -7,13 +7,21 @@
   <meta name="description" content="Le petit cadenas ne dit pas que le site est honnête. Il dit que la conversation est scellée. La nuance vaut de l’or.">
   <meta name="author" content="Mbairassem">
   <meta name="theme-color" content="#f3efe3">
+  <link rel="canonical" href="https://aktibcode.com/https-cadenas.html">
   <meta property="og:title" content="HTTPS : ce qui se passe quand le cadenas apparaît — AktibCode">
   <meta property="og:description" content="Le petit cadenas ne dit pas que le site est honnête. Il dit que la conversation est scellée. La nuance vaut de l’or.">
   <meta property="og:type" content="article">
-  <meta property="og:image" content="assets/images/https.jpg">
+  <meta property="og:url" content="https://aktibcode.com/https-cadenas.html">
+  <meta property="og:site_name" content="AktibCode">
+  <meta property="og:image" content="https://aktibcode.com/assets/images/https.jpg">
+  <meta property="og:image:alt" content="Mbairassem devant une enveloppe scellée, un grand cadenas vert et une clé orange.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="HTTPS : ce qui se passe quand le cadenas apparaît — AktibCode">
+  <meta name="twitter:description" content="Le petit cadenas ne dit pas que le site est honnête. Il dit que la conversation est scellée. La nuance vaut de l’or.">
+  <meta name="twitter:image" content="https://aktibcode.com/assets/images/https.jpg">
   <meta property="article:published_time" content="2026-11-05">
   <meta property="article:section" content="Sécurité">
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"HTTPS : ce qui se passe quand le cadenas apparaît","description":"Le petit cadenas ne dit pas que le site est honnête. Il dit que la conversation est scellée. La nuance vaut de l’or.","image":"assets/images/https.jpg","datePublished":"2026-11-05","dateModified":"2026-11-05","inLanguage":"fr","articleSection":"Sécurité","author":{"@type":"Person","name":"Mbairassem","url":"a-propos.html"},"publisher":{"@type":"Organization","name":"AktibCode"}}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"HTTPS : ce qui se passe quand le cadenas apparaît","description":"Le petit cadenas ne dit pas que le site est honnête. Il dit que la conversation est scellée. La nuance vaut de l’or.","image":"https://aktibcode.com/assets/images/https.jpg","datePublished":"2026-11-05","dateModified":"2026-11-05","inLanguage":"fr","articleSection":"Sécurité","mainEntityOfPage":"https://aktibcode.com/https-cadenas.html","citation":["https://developer.mozilla.org/en-US/docs/Glossary/HTTPS","https://developer.mozilla.org/en-US/docs/Glossary/TLS"],"author":{"@type":"Person","name":"Mbairassem","url":"https://aktibcode.com/a-propos.html"},"publisher":{"@type":"Organization","name":"AktibCode","url":"https://aktibcode.com","logo":"https://aktibcode.com/assets/favicon.svg"}}</script>
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <script>
     (function () {
@@ -42,7 +50,7 @@
         <span class="logo-word">Aktib<em>Code</em></span>
       </a>
       <nav class="site-nav" aria-label="Navigation principale">
-        <a href="articles.html" aria-current="page">Articles</a>
+        <a href="articles.html">Articles</a>
         <a href="lexique.html">Lexique</a>
         <a href="a-propos.html">À propos</a>
       </nav>
@@ -90,7 +98,7 @@
 
       <div class="container">
         <figure class="article-cover">
-          <img src="assets/images/https.jpg" alt="Mbairassem devant une enveloppe scellée, un grand cadenas vert et une clé orange." width="1400" height="933">
+          <img src="assets/images/https.jpg" srcset="assets/images/https-640.webp 640w, assets/images/https-960.webp 960w, assets/images/https-1400.webp 1400w" sizes="(max-width: 1240px) 100vw, 1240px" alt="Mbairassem devant une enveloppe scellée, un grand cadenas vert et une clé orange." width="1400" height="933" loading="eager" decoding="async" fetchpriority="high">
           <figcaption>
             <span>Sécurité · 05 nov. 2026</span>
             <span>Portrait : Mbairassem</span>
@@ -111,7 +119,7 @@
         </aside>
 
         <div class="prose">
-          <p>Quand vous saisissez un mot de passe, le petit cadenas à côté de l’adresse vous rassure. Mais que garantit-il exactement ? Pour le comprendre, il faut regarder ce qui circule entre votre navigateur et le serveur — et ce qui pourrait l’intercepter.</p>,<h2 id="http-la-carte-postale">HTTP, la carte postale</h2>,<p>Le web historique utilise HTTP, un protocole simple : votre navigateur envoie une demande, le serveur renvoie une réponse. Le problème, c’est que cette conversation voyage en clair. Sur un Wi-Fi public, un opérateur ou un routeur mal configuré peut lire vos requêtes, vos cookies de session, vos formulaires. C’est comme envoyer une carte postale : tout le monde sur le trajet peut la lire.</p>,<p>HTTPS ajoute une couche de chiffrement, TLS, entre votre navigateur et le serveur. Le contenu devient illisible pour les intermédiaires. Mais HTTPS ne fait pas que chiffrer : il authentifie aussi le serveur et garantit que le message n’a pas été modifié en route.</p>,<h2 id="tls-l-enveloppe-scellee">TLS, l’enveloppe scellée</h2>,<p>L’image de l’enveloppe scellée est utile, à condition d’ajouter une étape : avant de s’écrire, les deux parties doivent se mettre d’accord sur une clé secrète, sans que personne ne l’entende. C’est le fameux <strong>échange de clés</strong>. La cryptographie asymétrique permet de transmettre cette clé de façon sûre ; ensuite, la conversation utilise un chiffrement symétrique, plus rapide.</p>,<p>Concrètement, en quelques allers-retours de quelques millisecondes, le navigateur et le serveur se présentent, négocient une version de TLS, vérifient l’identité du serveur, puis établissent une clé de session. Tout le reste — la page, les formulaires, les cookies — voyage dans un tunnel chiffré.</p>,<h2 id="le-certificat-la-carte-d-identite">Le certificat, la carte d’identité</h2>,<p>Comment savoir que le serveur en face est bien celui de votre banque, et pas un imposteur ? Grâce à un <strong>certificat</strong>, délivré par une autorité de certification reconnue. Le certificat associe un nom de domaine à une clé publique, et l’autorité garantit avoir vérifié que le demandeur contrôle bien ce domaine.</p>,<p>Votre navigateur vérifie ce certificat : est-il valide, signé par une autorité de confiance, encore en date, et correspond-il au nom du site ? Si ce n’est pas le cas, un avertissement s’affiche. Il ne faut pas le contourner à la légère.</p>,<blockquote>HTTPS protège le trajet, pas l’intention. Un site de phishing peut très bien avoir un cadenas.</blockquote>,<h2 id="ce-que-le-cadenas-ne-garantit-pas">Ce que le cadenas ne garantit pas</h2>,<ul><li>Que le site est honnête : un escroc peut obtenir un certificat pour son propre domaine.</li><li>Que le contenu est vrai : HTTPS protège l’intégrité du message, pas sa sincérité.</li><li>Que votre ordinateur est sain : un logiciel malveillant peut lire l’écran avant le chiffrement.</li><li>Que votre correspondant est bien votre banque si vous avez tapé une adresse trompeuse.</li><li>Que les métadonnées sont cachées : le nom du site visité reste souvent visible.</li></ul>,<h2 id="trois-reflexes-utiles">Trois réflexes utiles</h2>,<p>Un, vérifiez le <strong>nom de domaine</strong>, pas seulement le cadenas : « banque-secure.net » n’est pas « banque.com ». Deux, ne saisissez jamais un mot de passe après avoir ignoré un avertissement de certificat. Trois, activez la double authentification : même si un mot de passe fuit, elle limite les dégâts.</p>,<p>HTTPS est une brique essentielle, pas un sceau de confiance absolu. Le cadenas dit « la conversation est protégée ». À vous de vérifier avec qui vous parlez.</p>
+          <p>Quand vous saisissez un mot de passe, le petit cadenas à côté de l’adresse vous rassure. Mais que garantit-il exactement ? Pour le comprendre, il faut regarder ce qui circule entre votre navigateur et le serveur — et ce qui pourrait l’intercepter.</p><h2 id="http-la-carte-postale">HTTP, la carte postale</h2><p>Le web historique utilise HTTP, un protocole simple : votre navigateur envoie une demande, le serveur renvoie une réponse. Le problème, c’est que cette conversation voyage en clair. Sur un Wi-Fi public, un opérateur ou un routeur mal configuré peut lire vos requêtes, vos cookies de session, vos formulaires. C’est comme envoyer une carte postale : tout le monde sur le trajet peut la lire.</p><p>HTTPS ajoute une couche de chiffrement, TLS, entre votre navigateur et le serveur. Le contenu devient illisible pour les intermédiaires. Mais HTTPS ne fait pas que chiffrer : il authentifie aussi le serveur et garantit que le message n’a pas été modifié en route.</p><h2 id="tls-l-enveloppe-scellee">TLS, l’enveloppe scellée</h2><p>L’image de l’enveloppe scellée est utile, à condition d’ajouter une étape : avant de s’écrire, les deux parties doivent se mettre d’accord sur une clé secrète, sans que personne ne l’entende. C’est le fameux <strong>échange de clés</strong>. La cryptographie asymétrique permet aux deux parties d’établir cette clé sans la transmettre en clair ; ensuite, la conversation utilise un chiffrement symétrique, plus rapide.</p><p>Concrètement, en quelques allers-retours de quelques millisecondes, le navigateur et le serveur se présentent, négocient une version de TLS, vérifient l’identité du serveur, puis établissent une clé de session. Tout le reste — la page, les formulaires, les cookies — voyage dans un tunnel chiffré.</p><h2 id="le-certificat-la-carte-d-identite">Le certificat, la carte d’identité</h2><p>Comment savoir que le serveur en face est bien celui de votre banque, et pas un imposteur ? Grâce à un <strong>certificat</strong>, délivré par une autorité de certification reconnue. Le certificat associe un nom de domaine à une clé publique, et l’autorité garantit avoir vérifié que le demandeur contrôle bien ce domaine.</p><p>Votre navigateur vérifie ce certificat : est-il valide, signé par une autorité de confiance, encore en date, et correspond-il au nom du site ? Si ce n’est pas le cas, un avertissement s’affiche. Il ne faut pas le contourner à la légère.</p><blockquote>HTTPS protège le trajet, pas l’intention. Un site de phishing peut très bien avoir un cadenas.</blockquote><h2 id="ce-que-le-cadenas-ne-garantit-pas">Ce que le cadenas ne garantit pas</h2><ul><li>Que le site est honnête : un escroc peut obtenir un certificat pour son propre domaine.</li><li>Que le contenu est vrai : HTTPS protège l’intégrité du message, pas sa sincérité.</li><li>Que votre ordinateur est sain : un logiciel malveillant peut lire l’écran avant le chiffrement.</li><li>Que votre correspondant est bien votre banque si vous avez tapé une adresse trompeuse.</li><li>Que les métadonnées sont cachées : le nom du site visité reste souvent visible.</li></ul><h2 id="trois-reflexes-utiles">Trois réflexes utiles</h2><p>Un, vérifiez le <strong>nom de domaine</strong>, pas seulement le cadenas : « banque-secure.net » n’est pas « banque.com ». Deux, ne saisissez jamais un mot de passe après avoir ignoré un avertissement de certificat. Trois, activez la double authentification : même si un mot de passe fuit, elle limite les dégâts.</p><p>HTTPS est une brique essentielle, pas un sceau de confiance absolu. Le cadenas dit « la conversation est protégée ». À vous de vérifier avec qui vous parlez.</p>
 
           <div class="takeaways">
             <h2>L’essentiel en 3 points</h2>
@@ -119,6 +127,13 @@
               <li>HTTPS chiffre la conversation et authentifie le serveur grâce à un certificat.</li><li>Il ne garantit ni l’honnêteté du site, ni la véracité de son contenu.</li><li>Vérifiez toujours le nom de domaine, même quand le cadenas est présent.</li>
             </ol>
           </div>
+          <section class="article-sources" aria-labelledby="sources-https-cadenas">
+            <h2 id="sources-https-cadenas">Sources principales</h2>
+            <p>Pour vérifier, approfondir ou prendre en compte l’évolution du sujet.</p>
+            <ul>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Glossary/HTTPS" rel="external">HTTPS</a> <span>— MDN Web Docs</span></li><li><a href="https://developer.mozilla.org/en-US/docs/Glossary/TLS" rel="external">TLS</a> <span>— MDN Web Docs</span></li>
+            </ul>
+          </section>
 
           <div class="article-foot">
             <div class="tags">
@@ -172,12 +187,12 @@
           </div>
           <div class="article-grid">
             
-    <article class="article-card">
+    <article class="article-card" data-category="Décryptage" data-search="Une API, c’est une prise électrique pour logiciels Derrière chaque paiement en ligne, chaque bulletin météo et chaque réponse de chatbot, il y a une API. Voici ce que c’est, sans jargon. Décryptage Une API est un contrat qui permet à deux logiciels de se parler sans se connaître. Elle standardise l’adresse, le format des données et les règles d’accès. Elle crée de la modularité, mais aussi une dépendance à surveiller.">
       <div class="card-media">
-        <img src="assets/images/api.jpg" alt="Mbairassem, en chemise noire brodée, pose à côté d’une grande prise électrique orange reliée à deux serveurs verts." loading="lazy" decoding="async" width="1400" height="933">
+        <img src="assets/images/api.jpg" srcset="assets/images/api-640.webp 640w, assets/images/api-960.webp 960w, assets/images/api-1400.webp 1400w" sizes="(max-width: 620px) 100vw, (max-width: 1080px) 50vw, 33vw" alt="Mbairassem, en chemise noire brodée, pose à côté d’une grande prise électrique orange reliée à deux serveurs verts." width="1400" height="933" loading="lazy" decoding="async">
       </div>
       <div class="card-body">
-        <span class="card-cat" style="--cat:#E8491D">Décryptage</span>
+        <span class="card-cat" style="--cat:#C53A12">Décryptage</span>
         <h3 class="card-title"><a href="api-prise-electrique.html">Une API, c’est une prise électrique pour logiciels</a></h3>
         <p class="card-dek">Derrière chaque paiement en ligne, chaque bulletin météo et chaque réponse de chatbot, il y a une API. Voici ce que c’est, sans jargon.</p>
         <div class="card-foot">
@@ -186,14 +201,14 @@
         </div>
       </div>
     </article>
-    <article class="article-card">
+    <article class="article-card" data-category="Intelligence artificielle" data-search="L’IA générative est un perroquet statistique Comprendre une IA générative commence par un mécanisme : elle calcule ce qui a le plus de chances de venir après. Et c’est déjà une petite révolution. Intelligence artificielle Un modèle de langage produit une suite probable sans vérifier les faits. Les hallucinations sont inhérentes à la méthode : la vérification reste indispensable. Ses bons usages reposent sur des sources fiables et un regard humain.">
       <div class="card-media">
-        <img src="assets/images/ia.jpg" alt="Mbairassem tend un jeton orange vers un perroquet mécanique en circuits imprimés, entouré de graphiques." loading="lazy" decoding="async" width="1400" height="933">
+        <img src="assets/images/ia.jpg" srcset="assets/images/ia-640.webp 640w, assets/images/ia-960.webp 960w, assets/images/ia-1400.webp 1400w" sizes="(max-width: 620px) 100vw, (max-width: 1080px) 50vw, 33vw" alt="Mbairassem tend un jeton orange vers un perroquet mécanique en circuits imprimés, entouré de graphiques." width="1400" height="933" loading="lazy" decoding="async">
       </div>
       <div class="card-body">
         <span class="card-cat" style="--cat:#6A4BFF">IA</span>
         <h3 class="card-title"><a href="ia-perroquet-statistique.html">L’IA générative est un perroquet statistique</a></h3>
-        <p class="card-dek">Elle ne comprend pas ce qu’elle écrit. Elle calcule ce qui a le plus de chances de venir après. Et c’est déjà une petite révolution.</p>
+        <p class="card-dek">Comprendre une IA générative commence par un mécanisme : elle calcule ce qui a le plus de chances de venir après. Et c’est déjà une petite révolution.</p>
         <div class="card-foot">
           <time datetime="2026-11-12">12 nov. 2026</time>
           <span class="read">3 min de lecture</span>

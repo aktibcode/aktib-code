@@ -8,9 +8,9 @@
   <meta name="author" content="AktibCode">
   <meta name="theme-color" content="#f3efe3">
   <meta property="og:title" content="AktibCode — La tech, sans le jargon">
-  <meta property="og:description" content="Comprendre le web, l’IA, les données et le code, sans avoir fait d’informatique.">
+  <meta property="og:description" content="AktibCode décrypte la tech pour celles et ceux qui n’ont pas fait d’informatique : web, IA, sécurité, données. Des articles clairs, précis et sans condescendance.">
   <meta property="og:type" content="website">
-  <meta property="og:image" content="assets/images/api.jpg">
+  <meta property="og:image" content="https://aktibcode.com/assets/images/api.jpg">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <script>
     (function () {
@@ -25,6 +25,14 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
+  <meta property="og:url" content="https://aktibcode.com/">
+  <meta property="og:site_name" content="AktibCode">
+  <meta property="og:image:alt" content="Mbairassem, en chemise noire brodée, pose à côté d’une grande prise électrique orange reliée à deux serveurs verts.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="AktibCode — La tech, sans le jargon">
+  <meta name="twitter:description" content="AktibCode décrypte la tech pour celles et ceux qui n’ont pas fait d’informatique : web, IA, sécurité, données. Des articles clairs, précis et sans condescendance.">
+  <meta name="twitter:image" content="https://aktibcode.com/assets/images/api.jpg">
+  <link rel="canonical" href="https://aktibcode.com/">
 </head>
 <body data-page="home">
   <a class="skip-link" href="#contenu">Aller au contenu</a>
@@ -39,7 +47,7 @@
       </a>
 
       <nav class="site-nav" aria-label="Navigation principale">
-        <a href="articles.html" aria-current="page">Articles</a>
+        <a href="articles.html">Articles</a>
         <a href="lexique.html">Lexique</a>
         <a href="a-propos.html">À propos</a>
       </nav>
@@ -90,26 +98,26 @@
             </ul>
           </div>
 
-          <a class="hero-feature" id="hero-feature" href="api-prise-electrique.html" aria-label="À la une : Une API, c’est une prise électrique pour logiciels">
-            <span class="sticker" aria-hidden="true"><span>✳</span>À la une</span>
-            <div class="hero-feature-media">
-              <img src="assets/images/api.jpg" alt="Mbairassem, en chemise noire brodée, pose à côté d’une grande prise électrique orange reliée à deux serveurs verts." width="1264" height="848" fetchpriority="high" decoding="async">
+          <!-- build:hero-feature -->
+<a class="hero-feature" id="hero-feature" href="api-prise-electrique.html" data-static="true" aria-label="À la une : Une API, c’est une prise électrique pour logiciels">
+        <span class="sticker" aria-hidden="true"><span>✳</span>À la une</span>
+        <div class="hero-feature-media">
+          <img src="assets/images/api.jpg" srcset="assets/images/api-640.webp 640w, assets/images/api-960.webp 960w, assets/images/api-1400.webp 1400w" sizes="(max-width: 880px) 100vw, 45vw" alt="Mbairassem, en chemise noire brodée, pose à côté d’une grande prise électrique orange reliée à deux serveurs verts." width="1400" height="933" loading="eager" decoding="async" fetchpriority="high">
+        </div>
+        <div class="hero-feature-body">
+          <div>
+            <span class="card-cat" style="--cat:#C53A12">Décryptage</span>
+            <h2>Une API, c’est une prise électrique pour logiciels</h2>
+            <div class="meta">
+              <span>18 nov. 2026</span>
+              <span>·</span>
+              <span>3 min</span>
             </div>
-            <div class="hero-feature-body">
-              <div>
-                <span class="card-cat" style="--cat:#E8491D">Décryptage</span>
-                <h2>Une API, c’est une prise électrique pour logiciels</h2>
-                <div class="meta">
-                  <span>18 nov. 2026</span>
-                  <span>·</span>
-                  <span>3 min</span>
-                </div>
-              </div>
-              <span class="hero-feature-arrow">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
-              </span>
-            </div>
-          </a>
+          </div>
+          <span class="hero-feature-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></span>
+        </div>
+      </a>
+<!-- /build:hero-feature -->
         </div>
       </div>
     </section>
@@ -153,9 +161,79 @@
           </a>
         </div>
         <div class="article-grid" id="home-grid">
-          <noscript>
-            <p>Activez JavaScript pour voir les articles, ou consultez <a href="articles.html">la liste des articles</a>.</p>
-          </noscript>
+          <!-- build:home-grid -->
+
+    <article class="article-card article-card--wide" data-category="Intelligence artificielle" data-search="L’IA générative est un perroquet statistique Comprendre une IA générative commence par un mécanisme : elle calcule ce qui a le plus de chances de venir après. Et c’est déjà une petite révolution. Intelligence artificielle Un modèle de langage produit une suite probable sans vérifier les faits. Les hallucinations sont inhérentes à la méthode : la vérification reste indispensable. Ses bons usages reposent sur des sources fiables et un regard humain.">
+      <div class="card-media">
+        <img src="assets/images/ia.jpg" srcset="assets/images/ia-640.webp 640w, assets/images/ia-960.webp 960w, assets/images/ia-1400.webp 1400w" sizes="(max-width: 1080px) 100vw, 60vw" alt="Mbairassem tend un jeton orange vers un perroquet mécanique en circuits imprimés, entouré de graphiques." width="1400" height="933" loading="lazy" decoding="async">
+      </div>
+      <div class="card-body">
+        <span class="card-cat" style="--cat:#6A4BFF">IA</span>
+        <h3 class="card-title"><a href="ia-perroquet-statistique.html">L’IA générative est un perroquet statistique</a></h3>
+        <p class="card-dek">Comprendre une IA générative commence par un mécanisme : elle calcule ce qui a le plus de chances de venir après. Et c’est déjà une petite révolution.</p>
+        <div class="card-foot">
+          <time datetime="2026-11-12">12 nov. 2026</time>
+          <span class="read">3 min de lecture</span>
+        </div>
+      </div>
+    </article>
+    <article class="article-card" data-category="Sécurité" data-search="HTTPS : ce qui se passe quand le cadenas apparaît Le petit cadenas ne dit pas que le site est honnête. Il dit que la conversation est scellée. La nuance vaut de l’or. Sécurité HTTPS chiffre la conversation et authentifie le serveur grâce à un certificat. Il ne garantit ni l’honnêteté du site, ni la véracité de son contenu. Vérifiez toujours le nom de domaine, même quand le cadenas est présent.">
+      <div class="card-media">
+        <img src="assets/images/https.jpg" srcset="assets/images/https-640.webp 640w, assets/images/https-960.webp 960w, assets/images/https-1400.webp 1400w" sizes="(max-width: 620px) 100vw, (max-width: 1080px) 50vw, 33vw" alt="Mbairassem devant une enveloppe scellée, un grand cadenas vert et une clé orange." width="1400" height="933" loading="lazy" decoding="async">
+      </div>
+      <div class="card-body">
+        <span class="card-cat" style="--cat:#1F6B54">Sécurité</span>
+        <h3 class="card-title"><a href="https-cadenas.html">HTTPS : ce qui se passe quand le cadenas apparaît</a></h3>
+        <p class="card-dek">Le petit cadenas ne dit pas que le site est honnête. Il dit que la conversation est scellée. La nuance vaut de l’or.</p>
+        <div class="card-foot">
+          <time datetime="2026-11-05">05 nov. 2026</time>
+          <span class="read">3 min de lecture</span>
+        </div>
+      </div>
+    </article>
+    <article class="article-card" data-category="Décryptage" data-search="Le cloud n’existe pas — il est en béton quelque part « Dans le cloud » ne veut pas dire « dans les airs ». Cela veut dire : sur l’ordinateur de quelqu’un d’autre, dans un bâtiment très réel. Décryptage Le cloud repose sur des centres de données physiques, énergivores et territoriaux. On loue des machines, des plateformes ou des logiciels — avec des contrats et des limites. La dépendance et les coûts de sortie méritent d’être anticipés dès le départ.">
+      <div class="card-media">
+        <img src="assets/images/cloud.jpg" srcset="assets/images/cloud-640.webp 640w, assets/images/cloud-960.webp 960w, assets/images/cloud-1400.webp 1400w" sizes="(max-width: 620px) 100vw, (max-width: 1080px) 50vw, 33vw" alt="Mbairassem dans une allée de serveurs verts, sous un nuage de béton relié par des câbles." width="1400" height="933" loading="lazy" decoding="async">
+      </div>
+      <div class="card-body">
+        <span class="card-cat" style="--cat:#C53A12">Décryptage</span>
+        <h3 class="card-title"><a href="cloud-beton.html">Le cloud n’existe pas — il est en béton quelque part</a></h3>
+        <p class="card-dek">« Dans le cloud » ne veut pas dire « dans les airs ». Cela veut dire : sur l’ordinateur de quelqu’un d’autre, dans un bâtiment très réel.</p>
+        <div class="card-foot">
+          <time datetime="2026-10-28">28 oct. 2026</time>
+          <span class="read">3 min de lecture</span>
+        </div>
+      </div>
+    </article>
+    <article class="article-card" data-category="Fondamentaux" data-search="Une base de données, c’est un classeur avec des règles Sans base de données, votre boutique en ligne vendrait le même livre à deux personnes. Ou perdrait la moitié de ses commandes au redémarrage. Fondamentaux Une base garantit la cohérence des données grâce à des règles et des transactions. Les clés relient les tables et évitent les duplications dangereuses. Les index accélèrent les recherches, au prix d’un peu d’espace et d’écriture.">
+      <div class="card-media">
+        <img src="assets/images/base-de-donnees.jpg" srcset="assets/images/base-de-donnees-640.webp 640w, assets/images/base-de-donnees-960.webp 960w, assets/images/base-de-donnees-1400.webp 1400w" sizes="(max-width: 620px) 100vw, (max-width: 1080px) 50vw, 33vw" alt="Mbairassem ouvre un tiroir de classeur rempli de fiches orange dans une salle d’archives." width="1400" height="933" loading="lazy" decoding="async">
+      </div>
+      <div class="card-body">
+        <span class="card-cat" style="--cat:#2C5FD6">Fondamentaux</span>
+        <h3 class="card-title"><a href="base-de-donnees-classeur.html">Une base de données, c’est un classeur avec des règles</a></h3>
+        <p class="card-dek">Sans base de données, votre boutique en ligne vendrait le même livre à deux personnes. Ou perdrait la moitié de ses commandes au redémarrage.</p>
+        <div class="card-foot">
+          <time datetime="2026-10-20">20 oct. 2026</time>
+          <span class="read">3 min de lecture</span>
+        </div>
+      </div>
+    </article>
+    <article class="article-card" data-category="Fondamentaux" data-search="Du clic à la page : le voyage de 300 millisecondes Vous tapez une adresse, vous appuyez sur Entrée, la page apparaît. Entre les deux, une chaîne logistique invisible. Fondamentaux Une visite web enchaîne DNS, connexion, requête, réponse, puis rendu. Le cache et la proximité des serveurs réduisent fortement les délais. Alléger les pages améliore à la fois l’expérience et l’empreinte environnementale.">
+      <div class="card-media">
+        <img src="assets/images/web.jpg" srcset="assets/images/web-640.webp 640w, assets/images/web-960.webp 960w, assets/images/web-1400.webp 1400w" sizes="(max-width: 620px) 100vw, (max-width: 1080px) 50vw, 33vw" alt="Mbairassem appuie sur un gros bouton orange devant un chronomètre et des fenêtres empilées." width="1400" height="933" loading="lazy" decoding="async">
+      </div>
+      <div class="card-body">
+        <span class="card-cat" style="--cat:#2C5FD6">Fondamentaux</span>
+        <h3 class="card-title"><a href="clic-page-300ms.html">Du clic à la page : le voyage de 300 millisecondes</a></h3>
+        <p class="card-dek">Vous tapez une adresse, vous appuyez sur Entrée, la page apparaît. Entre les deux, une chaîne logistique invisible.</p>
+        <div class="card-foot">
+          <time datetime="2026-10-09">09 oct. 2026</time>
+          <span class="read">3 min de lecture</span>
+        </div>
+      </div>
+    </article>
+<!-- /build:home-grid -->
         </div>
       </div>
     </section>
@@ -165,12 +243,56 @@
         <div class="section-head">
           <div>
             <span class="section-label">Explorer</span>
-            <h2>Cinq portes <em>d’entrée</em>.</h2>
+            <h2><span data-count="themes">cinq</span> portes <em>d’entrée</em>.</h2>
           </div>
           <p class="head-note">Chaque thème rassemble des articles autonomes. Commencez par celui qui vous intrigue, vous n’aurez pas besoin des autres.</p>
         </div>
         <div class="cat-list" id="cat-list">
-          <noscript><p>Les thèmes sont disponibles sur <a href="articles.html">la page des articles</a>.</p></noscript>
+          <!-- build:cat-list -->
+<a class="cat-link" href="articles.html?cat=D%C3%A9cryptage" style="--cat:#C53A12">
+            <span class="cat-index">01</span>
+            <div>
+              <h3>Décryptage</h3>
+              <span class="cat-count">2 articles</span>
+            </div>
+            <span class="cat-bar"></span>
+          </a><a class="cat-link" href="articles.html?cat=Intelligence%20artificielle" style="--cat:#6A4BFF">
+            <span class="cat-index">02</span>
+            <div>
+              <h3>Intelligence artificielle</h3>
+              <span class="cat-count">1 article</span>
+            </div>
+            <span class="cat-bar"></span>
+          </a><a class="cat-link" href="articles.html?cat=S%C3%A9curit%C3%A9" style="--cat:#1F6B54">
+            <span class="cat-index">03</span>
+            <div>
+              <h3>Sécurité</h3>
+              <span class="cat-count">1 article</span>
+            </div>
+            <span class="cat-bar"></span>
+          </a><a class="cat-link" href="articles.html?cat=Fondamentaux" style="--cat:#2C5FD6">
+            <span class="cat-index">04</span>
+            <div>
+              <h3>Fondamentaux</h3>
+              <span class="cat-count">2 articles</span>
+            </div>
+            <span class="cat-bar"></span>
+          </a><a class="cat-link" href="articles.html?cat=Culture" style="--cat:#A97600">
+            <span class="cat-index">05</span>
+            <div>
+              <h3>Culture</h3>
+              <span class="cat-count">2 articles</span>
+            </div>
+            <span class="cat-bar"></span>
+          </a><a class="cat-link cat-link--all" href="articles.html" style="--cat:var(--accent)">
+          <span class="cat-index">→</span>
+          <div>
+            <h3>Tout voir</h3>
+            <span class="cat-count">8 articles</span>
+          </div>
+          <span class="cat-bar"></span>
+        </a>
+<!-- /build:cat-list -->
         </div>
       </div>
     </section>
@@ -192,7 +314,7 @@
         <defs><path id="stampPath" d="M60,60 m-44,0 a44,44 0 1,1 88,0 a44,44 0 1,1 -88,0"/></defs>
         <circle cx="60" cy="60" r="55" fill="none" stroke="currentColor" stroke-opacity=".22"/>
         <text><textPath href="#stampPath">LA TECH SANS LE JARGON · AKTIBCODE · </textPath></text>
-        <text x="60" y="67" text-anchor="middle" font-family="Bricolage Grotesque, sans-serif" font-size="22" fill="#e8491d">✳</text>
+        <text x="60" y="67" text-anchor="middle" font-family="Bricolage Grotesque, sans-serif" font-size="22" fill="#c53a12">✳</text>
       </svg>
     </section>
 
@@ -207,7 +329,33 @@
           </a>
         </div>
         <div class="lex-mini" id="lex-mini">
-          <noscript><p><a href="lexique.html">Consulter le lexique</a></p></noscript>
+          <!-- build:lex-mini -->
+<a href="lexique.html#api">
+            <div>
+              <span class="lex-term">API</span>
+              <span class="lex-def">Contrat qui permet à deux logiciels de communiquer : une adresse, un format de données et des règles d’accès. Pensez à une prise électrique standardisée.</span>
+            </div>
+            <span class="lex-tag">Développement</span>
+          </a><a href="lexique.html#llm">
+            <div>
+              <span class="lex-term">LLM</span>
+              <span class="lex-def">Grand modèle de langage (Large Language Model). Système entraîné à prédire la suite probable d’un texte, ce qui lui permet de rédiger, résumer ou converser.</span>
+            </div>
+            <span class="lex-tag">Intelligence artificielle</span>
+          </a><a href="lexique.html#https">
+            <div>
+              <span class="lex-term">HTTPS</span>
+              <span class="lex-def">Version chiffrée et authentifiée du protocole HTTP. Elle protège la conversation entre le navigateur et le serveur au moyen de TLS.</span>
+            </div>
+            <span class="lex-tag">Sécurité</span>
+          </a><a href="lexique.html#open-source">
+            <div>
+              <span class="lex-term">Open source</span>
+              <span class="lex-def">Logiciel dont la licence garantit le droit d’exécuter, d’étudier, de modifier et de redistribuer le code source. Ce n’est pas synonyme de gratuit.</span>
+            </div>
+            <span class="lex-tag">Culture</span>
+          </a>
+<!-- /build:lex-mini -->
         </div>
       </div>
     </section>
